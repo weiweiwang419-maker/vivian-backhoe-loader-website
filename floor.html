@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From the Factory Floor | VIVIAN — Backhoe Loader Expert</title>
+<meta name="description" content="Real stories from the factory floor. What Vivian sees every day — the good, the bad, and the 'are you kidding me' moments.">
+<style>
+  :root {
+    --primary: #0F6E56;
+    --primary-dark: #094739;
+    --accent: #EF9F27;
+    --cream: #F5F1E8;
+    --text: #1A1A1A;
+    --text-light: #5C5C5C;
+    --border: #E5E0D5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+  }
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    padding: 18px 0;
+  }
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary);
+  }
+  .logo span { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-cta {
+    background: var(--primary);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .nav-cta:hover { background: var(--primary-dark); color: #fff !important; }
+
+  /* Page Header */
+  .page-header {
+    margin-top: 80px;
+    padding: 80px 40px 60px;
+    background: var(--primary);
+    color: #fff;
+  }
+  .page-header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .page-eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .page-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .page-subtitle {
+    font-size: 18px;
+    opacity: 0.85;
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+  /* Blog Posts */
+  .blog-section {
+    padding: 80px 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .blog-post {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    align-items: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border);
+  }
+  .blog-post:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .blog-media {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+  }
+  .blog-media img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+  }
+  .blog-media video {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+  }
+  .blog-content .post-date {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 12px;
+  }
+  .blog-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .blog-content h2 a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .blog-content h2 a:hover { color: var(--primary); }
+  .blog-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .blog-content .read-more {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .blog-content .signature {
+    font-style: italic;
+    color: var(--primary);
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  /* CTA */
+  .cta-section {
+    background: var(--cream);
+    padding: 80px 40px;
+    text-align: center;
+  }
+  .cta-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .cta-section h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 20px;
+  }
+  .cta-section p {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--primary);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+  .cta-btn:hover { transform: translateY(-2px); background: var(--primary-dark); }
+
+  /* Footer */
+  footer {
+    background: #1A1A1A;
+    color: rgba(255,255,255,0.7);
+    padding: 60px 40px 30px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  .footer-brand h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .footer-brand p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 400px;
+  }
+  footer h5 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 8px; font-size: 14px; }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .page-header { padding: 60px 24px 40px; }
+    .blog-section { padding: 40px 24px; }
+    .blog-post { grid-template-columns: 1fr; gap: 24px; }
+    .blog-media img, .blog-media video { height: 220px; }
+    .cta-section { padding: 60px 24px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="floor.html">From the Floor</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Real stories from the floor</div>
+    <h1 class="page-title">From the Factory Floor</h1>
+    <p class="page-subtitle">The stuff catalogs don't tell you. What I see every day — the good machines, the bad decisions, and the moments that make me say "no way."</p>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section class="blog-section">
+  <div class="blog-grid">
+
+    <!-- Post 1 - Video -->
+    <div class="blog-post">
+      <div class="blog-media">
+        <video controls preload="metadata" style="width:100%; height:100%; object-fit:cover;">
+          <source src="videos/welding-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="blog-content">
+        <div class="post-date">This week · Welding shop</div>
+        <h2><a href="#">Why I said no this week</a></h2>
+        <p>Last Tuesday I walked past a batch of BL90-25s ready for export. Looked fine on the outside. Opened the engine cover. Hydraulic hoses routed wrong, would have chafed through in 200 hours.</p>
+        <p>I sent all six back to the workshop. The client would have never known until it broke down in their country. That's two weeks of waiting, $4,000 in shipping, and a damaged reputation — all because nobody checked.</p>
+        <p class="signature">— Vivian, at the workshop</p>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="blog-post">
+      <div class="blog-media">
+        <img src="images/factory/dji_02_工厂全景_灰橙挖掘装载机.jpg" alt="Engine check">
+      </div>
+      <div class="blog-content">
+        <div class="post-date">Last month · Engine test</div>
+        <h2><a href="#">The sound that saved a shipment</a></h2>
+        <p>I was doing a pre-delivery start-up on a BL105-25. Everything looked good on the checklist. Then I heard it — a faint ticking from the injector. Not loud, not obvious, but it wasn't right.</p>
+        <p>Opened it up. One injector was seated wrong from the factory. Would have run fine for 50 hours, then started misfiring. The client would have blamed the engine. Instead, I blamed the assembly line.</p>
+        <p>That's why I listen. Not just look.</p>
+        <p class="signature">— Vivian</p>
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="blog-post">
+      <div class="blog-media">
+        <img src="images/products/bl70-25-front.jpg" alt="Container loading">
+      </div>
+      <div class="blog-content">
+        <div class="post-date">Two weeks ago · Shipping</div>
+        <h2><a href="#">What I see in a shipping container</a></h2>
+        <p>People think shipping is just "put machine in container, close door." It's not. I've seen machines arrive with crushed cabs because nobody padded the tie-down points. I've seen paint rubbed off because nobody put protection film on the boom.</p>
+        <p>When I load a container, I take photos of every tie-down. I film the whole process. I send it to the client before the boat even leaves. Because if something moves in transit, I want us both to know exactly how it was loaded.</p>
+        <p class="signature">— Vivian</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Want to see what I'm looking at today?</h2>
+    <p>Follow along. I post real photos and videos from the floor — not marketing shots, but the actual work.</p>
+    <a href="https://wa.me/8618911415465" class="cta-btn">💬 Follow me on WhatsApp →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4>VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4>
+      <p>Your trusted backhoe loader consultant in China. Real factory inspection, honest advice, no markup games.</p>
+    </div>
+    <div>
+      <h5>Quick links</h5>
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="floor.html">From the Floor</a></li>
+        <li><a href="about.html">About Vivian</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Get in touch</h5>
+      <ul>
+        <li><a href="https://wa.me/8618911415465">WhatsApp</a></li>
+        <li><a href="mailto:vivian.aolite@gmail.com">Email</a></li>
+        <li>Mon-Sat, 8am-6pm GMT+8</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Vivian — Backhoe Loader · All rights reserved
+  </div>
+</footer>
+
+</body>
+</html>

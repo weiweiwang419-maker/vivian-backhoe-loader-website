@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Vivian | VIVIAN — Backhoe Loader Expert</title>
+<meta name="description" content="Meet Vivian — a real person who checks every backhoe loader before it ships from China. No middleman, no markup games, just honest factory inspection.">
+<style>
+  :root {
+    --primary: #0F6E56;
+    --primary-dark: #094739;
+    --accent: #EF9F27;
+    --cream: #F5F1E8;
+    --text: #1A1A1A;
+    --text-light: #5C5C5C;
+    --border: #E5E0D5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+  }
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    padding: 18px 0;
+  }
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary);
+  }
+  .logo span { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-cta {
+    background: var(--primary);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .nav-cta:hover { background: var(--primary-dark); color: #fff !important; }
+
+  /* Page Header */
+  .page-header {
+    margin-top: 80px;
+    padding: 80px 40px 60px;
+    background: var(--cream);
+  }
+  .page-header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .page-eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .page-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .page-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+  /* Story Section */
+  .story-section {
+    padding: 100px 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .story-photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  .story-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+  }
+  .story-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .story-content .highlight {
+    background: var(--cream);
+    padding: 24px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+    margin: 32px 0;
+  }
+  .story-content .highlight p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--primary-dark);
+    font-size: 17px;
+  }
+
+  /* Why Trust Section */
+  .trust-section {
+    background: var(--primary);
+    padding: 100px 40px;
+    color: #fff;
+  }
+  .trust-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .trust-section .section-eyebrow { color: var(--accent); }
+  .trust-section h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    margin-bottom: 60px;
+    max-width: 800px;
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .trust-card {
+    background: rgba(255,255,255,0.08);
+    padding: 40px 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .trust-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 16px;
+    opacity: 0.6;
+  }
+  .trust-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .trust-card p {
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* Workshop Section */
+  .workshop-section {
+    padding: 100px 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .workshop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .workshop-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .workshop-photos img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .workshop-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .workshop-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .workshop-content .signature {
+    font-style: italic;
+    color: var(--primary);
+    font-size: 18px;
+    margin-top: 32px;
+    font-weight: 500;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    background: var(--cream);
+    padding: 100px 40px;
+    text-align: center;
+  }
+  .cta-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .cta-section h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .cta-section p {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--primary);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    background: var(--primary-dark);
+  }
+
+  /* Footer */
+  footer {
+    background: #1A1A1A;
+    color: rgba(255,255,255,0.7);
+    padding: 60px 40px 30px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  .footer-brand h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .footer-brand p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 400px;
+  }
+  footer h5 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 8px; font-size: 14px; }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .page-header { padding: 60px 24px 40px; }
+    .story-section, .workshop-section { padding: 60px 24px; }
+    .story-grid, .workshop-grid { grid-template-columns: 1fr; gap: 40px; }
+    .trust-section { padding: 60px 24px; }
+    .trust-grid { grid-template-columns: 1fr; gap: 24px; }
+    .cta-section { padding: 60px 24px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="index.html#floor">From the Floor</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">About me</div>
+    <h1 class="page-title">I'm Vivian.<br>And I work the floor.</h1>
+    <p class="page-subtitle">Not a salesperson. Not a trading company. A real person who checks every machine before it leaves the factory — because your money, your project, your reputation, that's on me.</p>
+  </div>
+</section>
+
+<!-- My Story -->
+<section class="story-section">
+  <div class="story-grid">
+    <div class="story-photo">
+      <img src="images/factory/dji_01_奥力特工厂_橙色装载机队伍.jpg" alt="Vivian at the factory">
+    </div>
+    <div class="story-content">
+      <h2>Why I do this.</h2>
+      <p>I've been in the machinery export business for years. And I got tired of watching good people get burned.</p>
+      <p>You know the story: a buyer finds a "great deal" online. Pays upfront. Waits 45 days. Container arrives. Machine shows up and it's not what they ordered. Or it breaks in 3 weeks. Or the "supplier" stops replying.</p>
+      <div class="highlight">
+        <p>"I'm not here to make a quick sale. I'm here to be the consultant you call back."</p>
+      </div>
+      <p>So I built a different model. No company brand. No fancy office. Just me, the factory floor, and a WhatsApp number that actually gets answered.</p>
+      <p>I inspect every machine before it ships. I reject more than I approve. I tell you when you don't need the expensive option. Because I want you to call me again in two years — not because you have to, but because you trust me.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Trust Me -->
+<section class="trust-section">
+  <div class="trust-inner">
+    <div class="page-eyebrow" style="color: var(--accent);">Why you can trust me</div>
+    <h2>I'm not asking you to trust a company.<br>I'm asking you to trust a person.</h2>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-number">01</div>
+        <h3>I'm on the floor every day</h3>
+        <p>I don't sit in an office and forward emails. I'm at the factory, checking welds, testing hydraulics, watching the loading crew. If something's wrong, I see it before you do.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-number">02</div>
+        <h3>I tell you "no"</h3>
+        <p>If a machine isn't ready, I won't ship it. If you don't need the expensive model, I'll tell you. I've lost sales by being honest — and gained clients for life because of it.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-number">03</div>
+        <h3>You can reach me</h3>
+        <p>WhatsApp. Email. Video call at the factory. I'm not a call center. When you message me, you get me. Usually within an hour during GMT+8 working hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workshop Photos -->
+<section class="workshop-section">
+  <div class="workshop-grid">
+    <div class="workshop-photos">
+      <img src="images/factory/dji_02_工厂全景_灰橙挖掘装载机.jpg" alt="Factory view">
+      <img src="images/factory/dji_03_工厂前_银橙产品矩阵.jpg" alt="Products at factory">
+      <img src="images/factory/dji_04_红色装载机_V字队形.jpg" alt="Red machines">
+      <img src="images/products/bl70-25-front.jpg" alt="Close up">
+    </div>
+    <div class="workshop-content">
+      <div class="page-eyebrow">What I actually do</div>
+      <h2>Every day, it's the same thing.</h2>
+      <p>I walk into the factory. I check what's being built. I talk to the workers. I look at the hydraulic routing. I start the engine and listen.</p>
+      <p>Some days I approve a shipment. Some days I send six machines back to the workshop. Both are part of the job.</p>
+      <p>The stuff I post on "From the Floor" — that's not marketing. That's just what I saw that day. The good, the bad, the "are you kidding me" moments.</p>
+      <p>This is a real job. And I'm a real person doing it.</p>
+      <p class="signature">— Vivian</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Want to see for yourself?</h2>
+    <p>Text me on WhatsApp. I'll send you a video of the machine you're asking about — filmed right there at the factory, not a stock photo from 2019.</p>
+    <a href="https://wa.me/8618911415465" class="cta-btn">💬 Text me on WhatsApp →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4>VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4>
+      <p>Your trusted backhoe loader consultant in China. Real factory inspection, honest advice, no markup games.</p>
+    </div>
+    <div>
+      <h5>Quick links</h5>
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Vivian</a></li>
+        <li><a href="index.html#floor">From the Floor</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Get in touch</h5>
+      <ul>
+        <li><a href="https://wa.me/8618911415465">WhatsApp</a></li>
+        <li><a href="mailto:vivian.aolite@gmail.com">Email</a></li>
+        <li>Mon-Sat, 8am-6pm GMT+8</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Vivian — Backhoe Loader · All rights reserved
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIVIAN — Backhoe Loader Expert | Your China Sourcing Consultant</title>
+<meta name="description" content="Not just selling machines — I help you buy right. Vivian, your trusted backhoe loader consultant in China. Real factory inspection, honest advice, no markup games.">
+<style>
+  :root {
+    --primary: #0F6E56;
+    --primary-dark: #094739;
+    --accent: #EF9F27;
+    --cream: #F5F1E8;
+    --text: #1A1A1A;
+    --text-light: #5C5C5C;
+    --border: #E5E0D5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+  }
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    padding: 18px 0;
+  }
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary);
+  }
+  .logo span { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-cta {
+    background: var(--primary);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .nav-cta:hover { background: var(--primary-dark); color: #fff !important; }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 110, 86, 0.55), rgba(9, 71, 57, 0.75));
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+    padding: 120px 0 80px;
+  }
+  .hero-eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 32px;
+    max-width: 900px;
+    letter-spacing: -1px;
+  }
+  .hero-tagline {
+    font-size: clamp(18px, 2vw, 22px);
+    max-width: 680px;
+    margin-bottom: 48px;
+    opacity: 0.95;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--accent);
+    color: var(--primary-dark);
+    padding: 18px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(239, 159, 39, 0.3);
+  }
+  .hero-secondary {
+    display: inline-block;
+    margin-left: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding-bottom: 2px;
+  }
+
+  /* Sections */
+  section {
+    padding: 100px 40px;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .section-eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    max-width: 800px;
+  }
+  .section-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+    max-width: 700px;
+    margin-bottom: 60px;
+    line-height: 1.6;
+  }
+
+  /* Why Me */
+  .why-me {
+    background: var(--cream);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .why-card {
+    background: #fff;
+    padding: 48px 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .why-number {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+  .why-card h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  .why-card p {
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* Products */
+  .products-section {
+    background: #fff;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  .product-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #f5f5f5;
+  }
+  .product-info {
+    padding: 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-tag {
+    font-size: 11px;
+    color: var(--text-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .product-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .product-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    flex: 1;
+    line-height: 1.6;
+  }
+  .product-link {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 16px;
+    text-decoration: none;
+  }
+
+  .view-all {
+    text-align: center;
+    padding: 32px 0;
+  }
+  .view-all a {
+    display: inline-block;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 16px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .view-all a:hover {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  /* From the Floor */
+  .floor-section {
+    background: var(--primary);
+    color: #fff;
+  }
+  .floor-section .section-eyebrow { color: var(--accent); }
+  .floor-section .section-title { color: #fff; }
+  .floor-section .section-subtitle { color: rgba(255,255,255,0.85); }
+  .floor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .floor-image {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 480px;
+  }
+  .floor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .floor-content h3 {
+    font-size: 24px;
+    margin: 24px 0 12px;
+  }
+  .floor-content p {
+    color: rgba(255,255,255,0.85);
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .floor-content .signature {
+    font-style: italic;
+    color: var(--accent);
+    font-size: 17px;
+    margin-top: 32px;
+  }
+
+  /* Contact */
+  .contact-section {
+    background: var(--cream);
+    text-align: center;
+  }
+  .contact-section .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 36px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .contact-btn.primary {
+    background: var(--primary);
+    color: #fff;
+  }
+  .contact-btn.primary:hover { background: var(--primary-dark); }
+  .contact-btn.secondary {
+    background: #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  .contact-btn.secondary:hover { background: var(--primary); color: #fff; }
+
+  /* Footer */
+  footer {
+    background: #1A1A1A;
+    color: rgba(255,255,255,0.7);
+    padding: 60px 40px 30px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  .footer-brand h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .footer-brand p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 400px;
+  }
+  footer h5 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 8px; font-size: 14px; }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* Vivian Video */
+  .vivian-video-section {
+    background: var(--cream);
+    padding: 100px 40px;
+  }
+  .vivian-video-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .vivian-video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .vivian-video-player {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  .vivian-video-player video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .vivian-video-content .section-eyebrow { color: var(--accent); margin-bottom: 12px; }
+  .vivian-video-content h2 {
+    font-size: clamp(28px, 3.5vw, 42px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .vivian-video-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+  .vivian-video-content .signature {
+    font-style: italic;
+    color: var(--primary);
+    font-size: 17px;
+    margin-top: 28px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .vivian-video-section { padding: 60px 24px; }
+    .vivian-video-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero { padding: 0 24px; }
+    .hero-content { padding: 100px 0 60px; }
+    section { padding: 60px 24px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .floor-grid { grid-template-columns: 1fr; gap: 40px; }
+    .floor-image { height: 280px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-secondary { display: block; margin: 24px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="floor.html">From the Floor</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto"
+         poster="images/factory/dji_01_奥力特工厂_橙色装载机队伍.jpg">
+    <source src="videos/welding-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Backhoe Loader Sourcing Consultant · China</div>
+    <h1>Not just selling machines — I help you buy right.</h1>
+    <p class="hero-tagline">I work the factory floor every day. I check every machine before it ships. Because your money, your project, your reputation — that's on me.</p>
+    <a href="https://wa.me/8618911415465" class="hero-cta">Text me on WhatsApp →</a>
+    <a href="#products" class="hero-secondary">Browse machines</a>
+  </div>
+</section>
+
+<!-- Vivian Video -->
+<section class="vivian-video-section">
+  <div class="vivian-video-inner">
+    <div class="section-eyebrow">On the job</div>
+    <h2 class="section-title" style="max-width:900px;">This is me. Not a salesperson — the person who checks your machine.</h2>
+    <div class="vivian-video-grid" style="margin-top: 48px;">
+      <div class="vivian-video-player">
+        <video controls preload="metadata">
+          <source src="videos/vivian-backhoe-loader.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="vivian-video-content">
+        <p>I'm not a salesperson sitting in an office.</p>
+        <p>The video above? That's me — curious about every bolt, sensitive to every sound a machine makes. Work and play, no filter, just how I actually am.</p>
+        <p>When you message me on WhatsApp, you're not getting a quote bot. You're getting the person in this video.</p>
+        <p class="signature">— Vivian</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Me -->
+<section class="why-me" id="about">
+  <div class="container">
+    <div class="section-eyebrow">Why work with me</div>
+    <h2 class="section-title">Buying a backhoe loader from China is risky. I make it not.</h2>
+    <p class="section-subtitle">The market is full of bad machines, broken promises, and middlemen who disappear after you pay. I'm not that. I'm the person on the floor who makes sure what you ordered is what shows up.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-number">01</div>
+        <h3>I check every machine</h3>
+        <p>Before it ships, I personally walk around it. I check welds, hydraulics, paint, every bolt. If something's off, it doesn't leave the factory. I reject more machines than I approve.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-number">02</div>
+        <h3>No middleman markup</h3>
+        <p>I work directly with verified Chinese manufacturers. No trading company layers, no fake "export quality" rebrands, no surprise fees. You pay for the machine, not for someone's vacation.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-number">03</div>
+        <h3>I tell you the truth</h3>
+        <p>Some clients call me for a 25-ton excavator. I tell them they don't need one. Some call for a cheap machine. I tell them why cheap costs more. I'm not here to make a quick sale. I'm here to be the consultant you call back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="section-eyebrow">Featured machines</div>
+    <h2 class="section-title">Backhoe loaders, hand-picked</h2>
+    <p class="section-subtitle">These are the models I've shipped most. Each one I've inspected, configured, and put through real work conditions. Ask me which one fits your job.</p>
+
+    <div class="product-grid">
+      <a href="product-bl105-25.html" class="product-card">
+        <img src="images/products/bl105-25-front.jpg" alt="BL 105-25 Backhoe Loader">
+        <div class="product-info">
+          <div class="product-tag">Heavy Duty · 10,870 kg</div>
+          <h3>BL 105-25</h3>
+          <p>The workhorse. 73kW Weichai turbo, 4-meter dig depth, 40 km/h road speed. For road construction, municipal work, serious jobs.</p>
+          <span class="product-link">View specs →</span>
+        </div>
+      </a>
+
+      <a href="product-bl90-25.html" class="product-card">
+        <img src="images/products/bl90-25-front.jpg" alt="BL 90-25 Backhoe Loader">
+        <div class="product-info">
+          <div class="product-tag">Versatile · 9,000 kg</div>
+          <h3>BL 90-25</h3>
+          <p>The all-rounder. Telescopic arm option, 6-in-1 bucket, optional premium cab. Most popular with African and Southeast Asian buyers.</p>
+          <span class="product-link">View specs →</span>
+        </div>
+      </a>
+
+      <a href="product-bl70-25.html" class="product-card">
+        <img src="images/products/bl70-25-front.jpg" alt="BL 70-25 Backhoe Loader">
+        <div class="product-info">
+          <div class="product-tag">Mid-Size · 6,300 kg</div>
+          <h3>BL 70-25</h3>
+          <p>Compact but capable. Great for farms, orchards, small construction sites. Easy to ship, easy to operate.</p>
+          <span class="product-link">View specs →</span>
+        </div>
+      </a>
+
+      <a href="product-bl15-06.html" class="product-card">
+        <img src="images/products/bl15-06-front.jpg" alt="BL 15-06 Mini Electric Backhoe Loader">
+        <div class="product-info">
+          <div class="product-tag">Electric · 1,500 kg</div>
+          <h3>BL 15-06 Mini</h3>
+          <p>Electric mini backhoe. 72V/120V battery, 1,580mm dig depth. Perfect for indoor, greenhouse, urban projects where diesel won't do.</p>
+          <span class="product-link">View specs →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="view-all">
+      <a href="products.html">View all 7 models →</a>
+    </div>
+  </div>
+</section>
+
+<!-- From the Floor -->
+<section class="floor-section" id="floor">
+  <div class="container">
+    <div class="section-eyebrow">From the factory floor</div>
+    <h2 class="section-title">The stuff catalogs don't tell you.</h2>
+    <p class="section-subtitle">This is what I see every day. Real machines, real problems, real decisions. Some shipments I approve. Some I send back. This is the part most suppliers hide from you.</p>
+
+    <div class="floor-grid">
+      <div class="floor-image" style="border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
+        <video controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <source src="videos/welding-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="floor-content">
+        <div class="section-eyebrow" style="color: var(--accent);">Why I said no this week</div>
+        <h3>"Sorry, this one isn't shipping."</h3>
+        <p>Last Tuesday I walked past a batch of BL90-25s ready for export. Looked fine on the outside. Opened the engine cover. Hydraulic hoses routed wrong, would have chafed through in 200 hours.</p>
+        <p>I sent all six back to the workshop. The client would have never known until it broke down in their country. That's two weeks of waiting, $4,000 in shipping, and a damaged reputation — all because nobody checked.</p>
+        <p>I'm not afraid to say no. It's the only reason clients trust me.</p>
+        <p class="signature">— Vivian, at the workshop</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-eyebrow">Get in touch</div>
+    <h2 class="section-title">Text me. I usually reply within an hour.</h2>
+    <p class="section-subtitle">I'm at the factory from 8am to 6pm (GMT+8). If I don't reply right away, I'm probably under a machine. WhatsApp is the fastest way to reach me.</p>
+    <div class="contact-buttons">
+      <a href="https://wa.me/8618911415465" class="contact-btn primary">💬 WhatsApp +86 189 1141 5465</a>
+      <a href="mailto:vivian.aolite@gmail.com" class="contact-btn secondary">✉️ vivian.aolite@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4>VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4>
+      <p>Your trusted backhoe loader consultant in China. Real factory inspection, honest advice, no markup games. Based on the workshop floor, working with verified Chinese manufacturers.</p>
+    </div>
+    <div>
+      <h5>Quick links</h5>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#floor">From the Floor</a></li>
+        <li><a href="#about">About Vivian</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Get in touch</h5>
+      <ul>
+        <li><a href="https://wa.me/8618911415465">WhatsApp</a></li>
+        <li><a href="mailto:vivian.aolite@gmail.com">Email</a></li>
+        <li>Mon-Sat, 8am-6pm GMT+8</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Vivian — Backhoe Loader · All rights reserved
+  </div>
+</footer>
+
+</body>
+</html>
