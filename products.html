@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -281,6 +282,27 @@
     .products-grid { grid-template-columns: 1fr; gap: 24px; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
   }
+
+  /* Logo Icon */
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  .footer-logo {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .footer-logo-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
 </style>
 </head>
 <body>
@@ -288,7 +310,7 @@
 <!-- Navigation -->
 <nav>
   <div class="nav-inner">
-    <div class="logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
+    <div class="logo"><img src="logo.svg" class="logo-icon" alt="V Logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
@@ -531,7 +553,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <h4>VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4>
+      <div class="footer-logo-row"><img src="logo.svg" class="footer-logo" alt="V Logo"><h4 style="margin:0;">VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4></div>
       <p>Your trusted backhoe loader consultant in China. Real factory inspection, honest advice, no markup games.</p>
     </div>
     <div>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">V Engineering Machinery Logo</title>
+  <desc id="desc">A refined geometric V mark for an engineering machinery blog, built from precise steel-like facets with a restrained yellow accent.</desc>
+  <defs>
+    <linearGradient id="steelLeft" x1="190" y1="140" x2="512" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#28323d"/>
+      <stop offset="0.56" stop-color="#121923"/>
+      <stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="steelRight" x1="818" y1="140" x2="512" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#374151"/>
+      <stop offset="0.5" stop-color="#18202b"/>
+      <stop offset="1" stop-color="#090e15"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="650" y1="168" x2="750" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6c343"/>
+      <stop offset="1" stop-color="#d99512"/>
+    </linearGradient>
+  </defs>
+
+  <path fill="url(#steelLeft)" d="M170 152h150l210 545-82 176L170 152Z"/>
+  <path fill="url(#steelRight)" d="M704 152h150L576 873l-82-176 210-545Z"/>
+  <path fill="#fbfcfd" opacity="0.13" d="M266 200h52l190 494-24 52L266 200Z"/>
+  <path fill="#ffffff" opacity="0.09" d="M706 200h52L540 746l-24-52 190-494Z"/>
+  <path fill="#00060d" opacity="0.22" d="M448 873h128l-64-137-64 137Z"/>
+  <path fill="url(#accent)" d="M662 152h86l-58 150h-86l58-150Z"/>
+  <path fill="#f6c343" d="M462 812h100l-26 60h-48l-26-60Z"/>
+</svg>

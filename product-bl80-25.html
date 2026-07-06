@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -43,13 +44,34 @@
   footer h5 { color: #fff; font-size: 14px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; } footer ul { list-style: none; } footer li { margin-bottom: 8px; font-size: 14px; } footer a { color: rgba(255,255,255,0.7); text-decoration: none; } footer a:hover { color: var(--accent); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; font-size: 13px; }
   @media (max-width: 768px) { .nav-links { display: none; } .product-top { grid-template-columns: 1fr; gap: 40px; } .take-grid { grid-template-columns: 1fr; } .breadcrumb, .product-hero, .specs-section, .vivian-take, .full-specs, .related { padding-left: 24px; padding-right: 24px; } .footer-inner { grid-template-columns: 1fr; gap: 40px; } }
+
+  /* Logo Icon */
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  .footer-logo {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .footer-logo-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <div class="logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
+    <div class="logo"><img src="logo.svg" class="logo-icon" alt="V Logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
@@ -139,7 +161,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <h4>VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4>
+      <div class="footer-logo-row"><img src="logo.svg" class="footer-logo" alt="V Logo"><h4 style="margin:0;">VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4></div>
       <p>Your trusted backhoe loader consultant in China.</p>
     </div>
     <div>
