@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Quote | VIVIAN — Backhoe Loader Expert</title>
+<meta name="description" content="Request a detailed quote for any backhoe loader model. Tell me what you need — I'll send you a real price within 2 hours. No bots, no spam, just Vivian.">
+<style>
+  :root {
+    --primary: #0F6E56;
+    --primary-dark: #094739;
+    --accent: #EF9F27;
+    --cream: #F5F1E8;
+    --text: #1A1A1A;
+    --text-light: #5C5C5C;
+    --border: #E5E0D5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+  }
+  nav {
+    position: fixed; top: 0; width: 100%;
+    background: rgba(255,255,255,0.97); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border); z-index: 1000; padding: 18px 0;
+  }
+  .nav-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 40px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo { font-size: 18px; font-weight: 700; letter-spacing: 1px; color: var(--primary); }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { color: var(--text); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-cta { background: var(--primary); color: #fff !important; padding: 10px 20px; border-radius: 4px; font-size: 13px; }
+  .nav-cta:hover { background: var(--primary-dark); color: #fff !important; }
+  .logo-icon { width: 28px; height: 28px; vertical-align: middle; margin-right: 8px; display: inline-block; }
+
+  .quote-hero {
+    margin-top: 80px;
+    padding: 80px 40px 40px;
+    background: var(--cream);
+    text-align: center;
+  }
+  .quote-hero-inner { max-width: 800px; margin: 0 auto; }
+  .quote-eyebrow { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--primary); font-weight: 600; margin-bottom: 16px; }
+  .quote-hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -1px; margin-bottom: 20px; line-height: 1.15; }
+  .quote-hero p { font-size: 18px; color: var(--text-light); line-height: 1.6; max-width: 600px; margin: 0 auto; }
+
+  .quote-body { padding: 60px 40px; }
+  .quote-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: start; }
+
+  .form-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 48px; }
+  .form-card h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .form-card .form-intro { font-size: 14px; color: var(--text-light); margin-bottom: 36px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .form-group { margin-bottom: 20px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; letter-spacing: 0.3px; }
+  .form-group label .req { color: #D85A30; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 14px 16px; font-size: 15px; font-family: inherit;
+    border: 1px solid var(--border); border-radius: 6px; background: #FAFAF7;
+    transition: border-color 0.2s, background 0.2s; color: var(--text);
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--primary); background: #fff;
+  }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-group select { cursor: pointer; appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235C5C5C' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px;
+  }
+  .form-submit {
+    width: 100%; padding: 18px; font-size: 16px; font-weight: 700;
+    background: var(--primary); color: #fff; border: none; border-radius: 6px;
+    cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 12px;
+    font-family: inherit; letter-spacing: 0.5px;
+  }
+  .form-submit:hover { background: var(--primary-dark); }
+  .form-submit:active { transform: scale(0.99); }
+  .form-note { font-size: 12px; color: var(--text-light); margin-top: 16px; text-align: center; line-height: 1.5; }
+
+  .side-panel { position: sticky; top: 100px; }
+  .side-card { background: var(--cream); border-radius: 8px; padding: 36px; margin-bottom: 24px; }
+  .side-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+  .side-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
+  .side-card .wa-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25D366; color: #fff; padding: 16px 24px; border-radius: 6px;
+    text-decoration: none; font-weight: 700; font-size: 15px; margin-top: 16px; transition: background 0.2s;
+  }
+  .side-card .wa-btn:hover { background: #1da851; }
+  .trust-list { list-style: none; }
+  .trust-list li { font-size: 14px; color: var(--text-light); padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; align-items: start; gap: 10px; }
+  .trust-list li:last-child { border-bottom: none; }
+  .trust-list li::before { content: ''; display: inline-block; width: 8px; height: 8px; background: var(--primary); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+  .success-msg { display: none; text-align: center; padding: 60px 40px; }
+  .success-msg.show { display: block; }
+  .success-icon { width: 64px; height: 64px; margin: 0 auto 24px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .success-icon svg { width: 32px; height: 32px; }
+  .success-msg h2 { font-size: 28px; font-weight: 800; margin-bottom: 16px; }
+  .success-msg p { font-size: 16px; color: var(--text-light); max-width: 500px; margin: 0 auto 32px; line-height: 1.7; }
+  .success-msg .wa-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25D366; color: #fff; padding: 16px 32px; border-radius: 6px;
+    text-decoration: none; font-weight: 700; font-size: 15px;
+  }
+
+  footer { background: #1A1A1A; color: rgba(255,255,255,0.7); padding: 60px 40px 30px; }
+  .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+  .footer-brand h4 { color: #fff; font-size: 20px; margin-bottom: 12px; }
+  .footer-brand p { font-size: 14px; line-height: 1.7; max-width: 400px; }
+  footer h5 { color: #fff; font-size: 14px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  footer ul { list-style: none; } footer li { margin-bottom: 8px; font-size: 14px; }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; } footer a:hover { color: var(--accent); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; font-size: 13px; }
+  .footer-logo { width: 36px; height: 36px; vertical-align: middle; margin-right: 10px; display: inline-block; }
+  .footer-logo-row { display: flex; align-items: center; margin-bottom: 12px; }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .quote-hero { padding: 60px 24px 30px; }
+    .quote-body { padding: 40px 24px; }
+    .quote-grid { grid-template-columns: 1fr; gap: 40px; }
+    .form-card { padding: 28px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .side-panel { position: static; }
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo"><img src="logo.svg" class="logo-icon" alt="V Logo">VIVIAN <span>—</span> BACKHOE LOADER</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="floor.html">From the Floor</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="quote-hero">
+  <div class="quote-hero-inner">
+    <div class="quote-eyebrow">Request a quote</div>
+    <h1>Tell me what you need. I'll send a real price.</h1>
+    <p>No bots, no automated replies. Fill this out and I'll personally review your request and get back to you on WhatsApp within 2 hours (during factory hours, GMT+8).</p>
+  </div>
+</div>
+
+<div class="quote-body">
+  <div class="quote-grid">
+
+    <div class="form-card" id="formCard">
+      <h2>Quote request</h2>
+      <p class="form-intro">Fields marked <span style="color:#D85A30;">*</span> are required. The more detail you give, the more accurate my quote.</p>
+
+      <form action="https://formsubmit.co/vivian.aolite@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Quote Request - backhoemach.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.backhoemach.com/quote.html?sent=1">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full name <span class="req">*</span></label>
+            <input type="text" name="Full Name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Company name <span class="req">*</span></label>
+            <input type="text" name="Company" placeholder="Your company or business" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Country <span class="req">*</span></label>
+            <select name="Country" required>
+              <option value="">Select your country</option>
+              <optgroup label="— Africa —">
+                <option>Nigeria</option>
+                <option>South Africa</option>
+                <option>Kenya</option>
+                <option>Ghana</option>
+                <option>Ethiopia</option>
+                <option>Tanzania</option>
+                <option>Uganda</option>
+                <option>Cameroon</option>
+                <option>Senegal</option>
+                <option>Ivory Coast</option>
+                <option>Morocco</option>
+                <option>Egypt</option>
+                <option>Algeria</option>
+                <option>Sudan</option>
+                <option>Mozambique</option>
+                <option>Zambia</option>
+                <option>Zimbabwe</option>
+              </optgroup>
+              <optgroup label="— Southeast Asia —">
+                <option>Indonesia</option>
+                <option>Philippines</option>
+                <option>Vietnam</option>
+                <option>Thailand</option>
+                <option>Malaysia</option>
+                <option>Myanmar</option>
+                <option>Cambodia</option>
+                <option>Laos</option>
+              </optgroup>
+              <optgroup label="— Middle East —">
+                <option>Saudi Arabia</option>
+                <option>UAE</option>
+                <option>Turkey</option>
+                <option>Iraq</option>
+                <option>Jordan</option>
+                <option>Qatar</option>
+                <option>Oman</option>
+                <option>Kuwait</option>
+                <option>Lebanon</option>
+              </optgroup>
+              <optgroup label="— South America —">
+                <option>Brazil</option>
+                <option>Peru</option>
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>Argentina</option>
+                <option>Ecuador</option>
+                <option>Bolivia</option>
+                <option>Paraguay</option>
+              </optgroup>
+              <optgroup label="— Other —">
+                <option>Other / Not listed</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>WhatsApp number <span class="req">*</span></label>
+            <input type="tel" name="WhatsApp Number" placeholder="+234 801 234 5678" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email (optional)</label>
+            <input type="email" name="Email" placeholder="you@company.com">
+          </div>
+          <div class="form-group">
+            <label>Quantity needed <span class="req">*</span></label>
+            <input type="number" name="Quantity" min="1" value="1" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Which machine are you interested in? <span class="req">*</span></label>
+          <select name="Machine Model" required>
+            <option value="">Select a model</option>
+            <option>BL 105-25 — Heavy Duty (10,870 kg)</option>
+            <option>BL 90-25 — Versatile (9,000 kg)</option>
+            <option>BL 80-25 — Balanced (8,000 kg)</option>
+            <option>BL 70-25 — Mid-Size (6,300 kg)</option>
+            <option>BL 45-18 — Compact (4,500 kg)</option>
+            <option>BL 35-12 — Small (3,500 kg)</option>
+            <option>BL 15-06 Mini — Electric (1,500 kg)</option>
+            <option>Not sure yet — help me choose</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>When do you need it? (optional)</label>
+          <select name="Delivery Timeline">
+            <option value="">Select timeline</option>
+            <option>ASAP — urgent</option>
+            <option>1-3 months</option>
+            <option>3-6 months</option>
+            <option>6+ months — planning ahead</option>
+            <option>Just researching for now</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Specific requirements (optional)</label>
+          <textarea name="Specific Requirements" placeholder="Tell me about your project, site conditions, preferred configurations, shipping port, budget range, or anything else that helps me give you an accurate quote."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send my quote request</button>
+        <p class="form-note">Your information goes directly to Vivian's email. No third-party sharing, no spam. I reply personally.</p>
+      </form>
+    </div>
+
+    <div class="success-msg" id="successMsg">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2>Got it. I'm on it.</h2>
+      <p>Your request just landed in my inbox. I'll review it and message you on WhatsApp within 2 hours (factory hours, GMT+8). If it's outside my hours, I'll text you first thing in the morning.</p>
+      <p style="font-size: 14px; color: var(--text-light); margin-bottom: 24px;">— Vivian</p>
+      <a href="https://wa.me/8618911415465" class="wa-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18.3c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg>
+        Chat with me now on WhatsApp
+      </a>
+    </div>
+
+    <div class="side-panel" id="sidePanel">
+      <div class="side-card">
+        <h3>Prefer to talk first?</h3>
+        <p>No problem. Some clients like to chat before filling out a form. I get it — buying machinery from another country is a big decision.</p>
+        <a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%20have%20some%20questions%20about%20your%20backhoe%20loaders.%20Are%20you%20available%20to%20chat%3F" class="wa-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18.3c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg>
+          WhatsApp +86 189 1141 5465
+        </a>
+      </div>
+
+      <div class="side-card">
+        <h3>What happens after I send?</h3>
+        <ul class="trust-list">
+          <li>I personally read your request — no auto-replies, no bots.</li>
+          <li>I check which configuration fits your job and country.</li>
+          <li>I send you a real price with shipping estimate on WhatsApp.</li>
+          <li>You ask questions. I answer honestly, even if it means recommending a different model.</li>
+          <li>No pressure, no deposit required to get a quote.</li>
+        </ul>
+      </div>
+
+      <div class="side-card" style="background: #fff; border: 1px solid var(--border);">
+        <h3>Factory hours</h3>
+        <p style="margin-bottom: 4px;"><strong>Mon — Sat</strong></p>
+        <p>8:00 AM — 6:00 PM (GMT+8, Beijing time)</p>
+        <p style="margin-top: 12px; font-size: 13px;">Messages outside hours are answered first thing in the morning.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-row"><img src="logo.svg" class="footer-logo" alt="V Logo"><h4 style="margin:0;">VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4></div>
+      <p>Your trusted backhoe loader consultant in China. Real factory inspection, honest advice, no markup games.</p>
+    </div>
+    <div>
+      <h5>Quick links</h5>
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="floor.html">From the Floor</a></li>
+        <li><a href="about.html">About Vivian</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Get in touch</h5>
+      <ul>
+        <li><a href="https://wa.me/8618911415465">WhatsApp</a></li>
+        <li><a href="mailto:vivian.aolite@gmail.com">Email</a></li>
+        <li>Mon-Sat, 8am-6pm GMT+8</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Vivian — Backhoe Loader · All rights reserved</div>
+</footer>
+
+<script>
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    document.getElementById('formCard').style.display = 'none';
+    document.getElementById('sidePanel').style.display = 'none';
+    document.getElementById('successMsg').classList.add('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
