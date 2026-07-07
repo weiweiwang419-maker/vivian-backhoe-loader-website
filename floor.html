@@ -171,16 +171,17 @@
     object-fit: cover;
     display: block;
   }
-  .blog-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.6fr 1fr;
-    gap: 6px;
-    height: 460px;
+  .blog-gallery-wrap {
+    position: relative;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-    position: relative;
+  }
+  .blog-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 175px;
+    gap: 6px;
   }
   .blog-gallery img {
     width: 100%;
@@ -216,11 +217,7 @@
     text-transform: uppercase;
     padding: 5px 12px;
     border-radius: 3px;
-  }
-  .blog-media-gallery-wrap {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
+    z-index: 10;
   }
   .blog-content .post-date {
     font-size: 12px;
@@ -346,7 +343,7 @@
     .blog-section { padding: 40px 24px; }
     .blog-post { grid-template-columns: 1fr; gap: 24px; }
     .blog-media img, .blog-media video { height: 220px; }
-    .blog-gallery { height: 360px; }
+    .blog-gallery { grid-template-rows: 220px 140px; }
     .cta-section { padding: 60px 24px; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
   }
@@ -406,10 +403,12 @@
     <!-- Post 1 - Newest: Teaching clients -->
     <div class="blog-post">
       <div class="blog-media">
-        <div class="blog-gallery">
-          <img src="images/factory/training/training-1.jpg" alt="Vivian explaining the cab controls to the client">
-          <img src="images/factory/training/training-2.jpg" alt="Client learning the joystick controls">
-          <img src="images/factory/training/training-3.jpg" alt="Client getting the hang of it">
+        <div class="blog-gallery-wrap">
+          <div class="blog-gallery">
+            <img src="images/factory/training/training-1.jpg" alt="Vivian explaining the cab controls to the client">
+            <img src="images/factory/training/training-2.jpg" alt="Client learning the joystick controls">
+            <img src="images/factory/training/training-3.jpg" alt="Client getting the hang of it">
+          </div>
           <div class="blog-gallery-label">📸 On-site · Operator Training</div>
         </div>
       </div>
@@ -422,7 +421,6 @@
         <p><strong>Minutes 5-15:</strong> Drive in a straight line. Forward and backward. Stop. Start. No boom, no bucket. Just driving. Most beginners panic because they try to do everything at once. The machine is not your enemy. The machine is heavy and slow — that's a feature, not a bug.</p>
         <p><strong>Minutes 15-25:</strong> Now add the front loader. Lift, lower, tilt. Slowly. Feel the hydraulic delay. The boom doesn't respond to your hand — it responds to your hand three seconds ago. Once you accept that, you start to look like you know what you're doing.</p>
         <p><strong>Minutes 25-30:</strong> Swing the backhoe around. This is where most people give up. Two joysticks, four functions, plus the seat swing. The trick: keep your elbow against the armrest. If your arm is floating, you'll be all over the place.</p>
-        <p>At 32 minutes, he dug his first trench — straight, level, two feet deep. He bought me a bottle of green tea. I think I got the better deal.</p>
         <p>If you're a first-time owner, don't be afraid. The machine is designed to be learned. And remember — every operator you see on TikTok doing fancy tricks? They were once that guy sitting in the cab not touching anything for five minutes.</p>
         <p class="signature">— Vivian, in the yard</p>
       </div>
