@@ -89,6 +89,17 @@
     margin-bottom: 12px;
   }
 
+  /* 360 Gallery */
+  .gallery-360 { padding: 80px 40px; background: #fff; }
+  .gallery-360 img { display: block; }
+  @media (max-width: 768px) {
+    .gallery-360 { padding-left: 24px !important; padding-right: 24px !important; }
+    .gallery-360 > div > div[style*="grid-template-columns: 2fr 1fr"],
+    .gallery-360 > div > div[style*="grid-template-columns: 1fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    .gallery-360 > div > div[style*="grid-template-columns: 2fr 1fr"] img { height: 280px !important; }
+    .gallery-360 > div > div[style*="grid-template-columns: 1fr 1fr 1fr"] img { height: 220px !important; }
+  }
+
   /* FAQ Section */
   .faq-section { padding: 80px 40px; max-width: 1280px; margin: 0 auto; }
   .faq-section h2 { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
@@ -143,8 +154,8 @@
 <section class="product-hero">
   <div class="product-top">
     <div class="product-gallery">
-      <img src="images/products/bl80-25-front.jpg" alt="BL 80-25 Front">
-      <img src="images/products/bl80-25-2.jpg" alt="BL 80-25 Side" style="border-radius: 8px;">
+      <img src="images/products/bl80-25-front.jpg" alt="BL 80-25 Backhoe Loader - Front View" style="margin-bottom: 12px;">
+      <img src="images/products/bl80-25-2.jpg" alt="BL 80-25 - Side View" style="border-radius: 8px;">
     </div>
     <div>
       <div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); font-weight: 600; margin-bottom: 8px;">Balanced Model</div>
@@ -154,6 +165,35 @@
       <div class="product-cta">
         <a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%27m%20interested%20in%20the%20BL%2080-25%20Backhoe%20Loader.%20Could%20you%20send%20me%20the%20price%20and%20specifications%3F" class="btn-primary">💬 Get a quote on WhatsApp</a>
         <a href="mailto:vivian.aolite@gmail.com" class="btn-secondary">✉️ Email me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 360 Degree Gallery -->
+<section class="gallery-360" style="padding: 80px 40px; background: #fff;">
+  <div style="max-width: 1280px; margin: 0 auto;">
+    <div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--primary); font-weight: 600; margin-bottom: 12px;">Walk around the machine</div>
+    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.5px;">360° — see the BL 80-25 from every angle</h2>
+    <p style="font-size: 16px; color: var(--text-light); margin-bottom: 48px; max-width: 700px;">Real photos, not catalogs. What you see is what gets loaded on the truck.</p>
+
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; margin-bottom: 20px;">
+      <img src="images/products/bl80-25-2.jpg" alt="BL 80-25 - Front Left 45°" style="width: 100%; height: 420px; object-fit: cover; border-radius: 8px;">
+      <img src="images/products/bl80-25-3.jpg" alt="BL 80-25 - Right Side" style="width: 100%; height: 420px; object-fit: cover; border-radius: 8px;">
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+      <div>
+        <img src="images/products/bl80-25-4.jpg" alt="BL 80-25 - Front Loader Bucket" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
+        <p style="font-size: 13px; color: var(--text-light); margin-top: 12px; letter-spacing: 0.5px;">Front — loader bucket &amp; hydraulic arm</p>
+      </div>
+      <div>
+        <img src="images/products/bl80-25-5.jpg" alt="BL 80-25 - Rear View" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
+        <p style="font-size: 13px; color: var(--text-light); margin-top: 12px; letter-spacing: 0.5px;">Rear — backhoe arm &amp; stabilizer</p>
+      </div>
+      <div>
+        <img src="images/products/bl80-25-front.jpg" alt="BL 80-25 - Cab Detail" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
+        <p style="font-size: 13px; color: var(--text-light); margin-top: 12px; letter-spacing: 0.5px;">Side — cab view &amp; engine hood</p>
       </div>
     </div>
   </div>
