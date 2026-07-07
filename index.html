@@ -358,6 +358,53 @@
     height: 100%;
     object-fit: cover;
   }
+  .floor-image-mosaic {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6px;
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .floor-image-mosaic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .floor-image-mosaic img:hover {
+    transform: scale(1.03);
+  }
+  .floor-image-mosaic img:first-child {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .floor-image-mosaic img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .floor-image-mosaic img:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .floor-image-mosaic-label {
+    position: relative;
+    margin-top: -44px;
+    margin-left: 16px;
+    background: rgba(15,110,86,0.88);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 3px;
+    width: fit-content;
+    z-index: 10;
+  }
   .floor-content h3 {
     font-size: 24px;
     margin: 24px 0 12px;
@@ -518,6 +565,7 @@
     section { padding: 60px 24px; }
     .why-grid { grid-template-columns: 1fr; }
     .floor-grid { grid-template-columns: 1fr; gap: 40px; }
+    .floor-image-mosaic { height: 360px; }
     .floor-image { height: 280px; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
     .hero-secondary { display: block; margin: 24px 0 0; }
@@ -1142,17 +1190,17 @@
     <p class="section-subtitle">This is what I see every day. Real machines, real problems, real decisions. Some shipments I approve. Some I send back. This is the part most suppliers hide from you.</p>
 
     <div class="floor-grid">
-      <div class="floor-image" style="border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
-        <video controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          <source src="videos/welding-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="floor-image-mosaic">
+        <img src="images/factory/workshop-1.jpg" alt="Backhoe loader assembly line in the workshop">
+        <img src="images/factory/workshop-2.jpg" alt="Engine compartment and hydraulic hoses under inspection">
+        <img src="images/factory/workshop-3.jpg" alt="Turbocharger and engine details close-up">
       </div>
+      <div class="floor-image-mosaic-label">📸 Real workshop · No staging</div>
       <div class="floor-content">
         <div class="section-eyebrow" style="color: var(--accent);">Why I said no this week</div>
         <h3>"Sorry, this one isn't shipping."</h3>
         <p>Last Tuesday I walked past a batch of BL90-25s ready for export. Looked fine on the outside. Opened the engine cover. Hydraulic hoses routed wrong, would have chafed through in 200 hours.</p>
-        <p>I sent all six back to the workshop. The client would have never known until it broke down in their country. That's two weeks of waiting, $4,000 in shipping, and a damaged reputation — all because nobody checked.</p>
+        <p>The client would have never known until it broke down in their country. That's two weeks of waiting, $4,000 in shipping, and a damaged reputation — all because nobody checked.</p>
         <p>I'm not afraid to say no. It's the only reason clients trust me.</p>
         <p class="signature">— Vivian, at the workshop</p>
       </div>
