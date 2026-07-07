@@ -1,28 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
   <title id="title">V Engineering Machinery Logo</title>
-  <desc id="desc">A refined geometric V mark for an engineering machinery blog, built from precise steel-like facets with a restrained yellow accent.</desc>
+  <desc id="desc">A circular engineering machinery blog logo with a white geometric V mark and refined cutout details.</desc>
   <defs>
-    <linearGradient id="steelLeft" x1="190" y1="140" x2="512" y2="850" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#28323d"/>
-      <stop offset="0.56" stop-color="#121923"/>
-      <stop offset="1" stop-color="#080d14"/>
+    <linearGradient id="disc" x1="208" y1="150" x2="808" y2="864" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3a4653"/>
+      <stop offset="0.48" stop-color="#17202b"/>
+      <stop offset="1" stop-color="#0b1118"/>
     </linearGradient>
-    <linearGradient id="steelRight" x1="818" y1="140" x2="512" y2="850" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#374151"/>
-      <stop offset="0.5" stop-color="#18202b"/>
-      <stop offset="1" stop-color="#090e15"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="650" y1="168" x2="750" y2="360" gradientUnits="userSpaceOnUse">
+    <linearGradient id="rim" x1="190" y1="120" x2="830" y2="890" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f6c343"/>
-      <stop offset="1" stop-color="#d99512"/>
+      <stop offset="0.22" stop-color="#eef2f7"/>
+      <stop offset="0.74" stop-color="#596575"/>
+      <stop offset="1" stop-color="#151d27"/>
     </linearGradient>
+    <linearGradient id="whiteSteel" x1="268" y1="214" x2="710" y2="786" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#f4f7fb"/>
+      <stop offset="1" stop-color="#dfe6ee"/>
+    </linearGradient>
+    <filter id="lift" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#020617" flood-opacity="0.24"/>
+    </filter>
   </defs>
 
-  <path fill="url(#steelLeft)" d="M170 152h150l210 545-82 176L170 152Z"/>
-  <path fill="url(#steelRight)" d="M704 152h150L576 873l-82-176 210-545Z"/>
-  <path fill="#fbfcfd" opacity="0.13" d="M266 200h52l190 494-24 52L266 200Z"/>
-  <path fill="#ffffff" opacity="0.09" d="M706 200h52L540 746l-24-52 190-494Z"/>
-  <path fill="#00060d" opacity="0.22" d="M448 873h128l-64-137-64 137Z"/>
-  <path fill="url(#accent)" d="M662 152h86l-58 150h-86l58-150Z"/>
-  <path fill="#f6c343" d="M462 812h100l-26 60h-48l-26-60Z"/>
+  <g filter="url(#lift)">
+    <circle cx="512" cy="512" r="408" fill="url(#rim)"/>
+    <circle cx="512" cy="512" r="374" fill="url(#disc)"/>
+
+    <path fill="#ffffff" opacity="0.08" d="M218 390c46-132 168-226 310-226 94 0 178 38 239 100-62-35-135-55-213-55-152 0-284 72-336 181Z"/>
+    <path fill="#000" opacity="0.18" d="M207 647c60 128 183 213 321 213 132 0 248-75 318-187-84 71-190 114-306 114-142 0-263-54-333-140Z"/>
+
+    <path fill="url(#whiteSteel)" d="M234 282h143l135 342 135-342h143L572 782H452L234 282Z"/>
+
+    <path fill="#121a24" d="M352 354h56l104 263 104-263h56L542 704h-60L352 354Z"/>
+    <path fill="#121a24" d="M470 724h84l-24 58h-36l-24-58Z"/>
+
+    <path fill="#ffffff" opacity="0.46" d="M300 330h45l122 309-23 58L300 330Z"/>
+    <path fill="#cfd8e3" opacity="0.64" d="M678 330h46L580 697l-23-58 121-309Z"/>
+
+    <path fill="#f6c343" d="M622 282h82l-31 72h-81l30-72Z"/>
+    <path fill="#f6c343" d="M318 282h64l22 56h-64l-22-56Z"/>
+  </g>
 </svg>
