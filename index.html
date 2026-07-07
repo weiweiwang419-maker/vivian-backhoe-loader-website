@@ -358,6 +358,9 @@
     height: 100%;
     object-fit: cover;
   }
+  .floor-image-wrap {
+    position: relative;
+  }
   .floor-image-mosaic {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -391,9 +394,9 @@
     grid-row: 2;
   }
   .floor-image-mosaic-label {
-    position: relative;
-    margin-top: -44px;
-    margin-left: 16px;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
     background: rgba(15,110,86,0.88);
     color: #fff;
     font-size: 11px;
@@ -1190,12 +1193,14 @@
     <p class="section-subtitle">This is what I see every day. Real machines, real problems, real decisions. Some shipments I approve. Some I send back. This is the part most suppliers hide from you.</p>
 
     <div class="floor-grid">
-      <div class="floor-image-mosaic">
-        <img src="images/factory/workshop-1.jpg" alt="Backhoe loader assembly line in the workshop">
-        <img src="images/factory/workshop-2.jpg" alt="Engine compartment and hydraulic hoses under inspection">
-        <img src="images/factory/workshop-3.jpg" alt="Turbocharger and engine details close-up">
+      <div class="floor-image-wrap">
+        <div class="floor-image-mosaic">
+          <img src="images/factory/workshop-1.jpg" alt="Backhoe loader assembly line in the workshop">
+          <img src="images/factory/workshop-2.jpg" alt="Engine compartment and hydraulic hoses under inspection">
+          <img src="images/factory/workshop-3.jpg" alt="Turbocharger and engine details close-up">
+        </div>
+        <div class="floor-image-mosaic-label">📸 Real workshop · No staging</div>
       </div>
-      <div class="floor-image-mosaic-label">📸 Real workshop · No staging</div>
       <div class="floor-content">
         <div class="section-eyebrow" style="color: var(--accent);">Why I said no this week</div>
         <h3>"Sorry, this one isn't shipping."</h3>
