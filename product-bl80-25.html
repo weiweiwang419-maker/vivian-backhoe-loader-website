@@ -73,6 +73,38 @@
     align-items: center;
     margin-bottom: 12px;
   }
+
+  /* FAQ Section */
+  .faq-section { padding: 80px 40px; max-width: 1280px; margin: 0 auto; }
+  .faq-section h2 { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+  .faq-section .faq-intro { font-size: 16px; color: var(--text-light); margin-bottom: 40px; }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-question {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 0; cursor: pointer; font-size: 16px; font-weight: 600;
+    color: var(--text); transition: color 0.2s;
+  }
+  .faq-question:hover { color: var(--primary); }
+  .faq-question .faq-icon {
+    flex-shrink: 0; width: 24px; height: 24px; margin-left: 16px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--primary); font-size: 20px; transition: transform 0.3s;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 15px; color: var(--text-light); line-height: 1.8;
+  }
+  .faq-item.open .faq-answer { max-height: 600px; padding-bottom: 20px; }
+  .faq-answer ul { margin: 8px 0 8px 20px; }
+  .faq-answer li { margin-bottom: 4px; }
+  .faq-answer strong { color: var(--text); }
+  .faq-category-title {
+    font-size: 14px; font-weight: 700; color: var(--primary);
+    text-transform: uppercase; letter-spacing: 1px; margin: 32px 0 8px;
+  }
+  .faq-category-title:first-child { margin-top: 0; }
+
 </style>
 </head>
 <body>
@@ -83,6 +115,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
+      <li><a href="faq.html">FAQ</a></li>
       <li><a href="index.html#floor">From the Floor</a></li>
       <li><a href="index.html#about">About</a></li>
       <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
@@ -152,6 +185,67 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <p class="faq-intro">Quick answers to the questions buyers ask me most. Need more details? <a href="quote.html" style="color: var(--primary); font-weight: 600;">Send me a message →</a></p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How long does delivery take to my country?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>Sea freight transit time depends on your destination:
+<ul><li>Asia: 7–15 days</li><li>Middle East: 20–30 days</li><li>Africa: 20–45 days</li><li>South America: 30–45 days</li><li>Europe: 30–40 days</li><li>North America: 18–38 days</li><li>Oceania: 18–28 days</li></ul>
+The exact time may vary by shipping line and schedule. I'll confirm the estimated delivery when preparing your quotation.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What warranty do you offer?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>The complete machine comes with a <strong>12-month warranty or 1,500–2,000 working hours</strong>, whichever comes first. The exact warranty period varies by model — I'll confirm the specific terms for your chosen machine in the quotation.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do I get spare parts?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>We maintain stock of common spare parts and can ship them separately. Each machine also comes with a basic spare parts kit. For specific parts, just send me a photo or part number on WhatsApp and I'll arrange shipment.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What payment methods do you accept?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>We accept <strong>T/T (wire transfer)</strong>: 30% deposit in advance, 70% balance before shipment.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What is the minimum order quantity?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>Minimum order is <strong>1 unit</strong>. For bulk pricing: mini models 8+ units, mid-size 6+ units, large 3+ units. Bulk orders receive discounted pricing — contact me for a custom quote.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Can the machine be customized?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>All backhoe loaders can be customized with your preferred color at <strong>no extra cost</strong>. Customization lead time is 35–40 days depending on complexity. We also offer 40+ attachments — different bucket sizes, hydraulic breakers, crushers, snow brushes, fork frames, and more.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What certifications does the machine have?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>All machines are <strong>CE and ISO9001 certified</strong>. We can also assist qualified dealers with local certification requirements in your country.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Can I visit your factory?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>You're welcome to visit our factory at any time. Airport pickup service can be arranged — just let me know your travel plans. Every machine undergoes strict testing before shipping, and we provide inspection videos for your approval.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      var item = q.parentElement;
+      var wasOpen = item.classList.contains('open');
+      // Close all in same section
+      var section = item.closest('.faq-section, .faq-full');
+      if (section) {
+        section.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      }
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+});
+</script>
+
+<!-- Related -->
 <section class="related">
   <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 40px;">You might also consider</h2>
   <div class="related-grid">
@@ -174,7 +268,8 @@
     </div>
     <div>
       <h5>Quick links</h5>
-      <ul><li><a href="products.html">Products</a></li><li><a href="index.html#floor">From the Floor</a></li><li><a href="index.html#about">About</a></li></ul>
+      <ul><li><a href="products.html">Products</a></li><li><a href="faq.html">FAQ</a></li>
+      <li><a href="index.html#floor">From the Floor</a></li><li><a href="index.html#about">About</a></li></ul>
     </div>
     <div>
       <h5>Contact</h5>
