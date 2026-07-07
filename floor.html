@@ -173,15 +173,54 @@
   }
   .blog-gallery {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 4px;
-    height: 320px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.6fr 1fr;
+    gap: 6px;
+    height: 460px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    position: relative;
   }
   .blog-gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s ease;
+  }
+  .blog-gallery img:hover {
+    transform: scale(1.04);
+  }
+  .blog-gallery img:first-child {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .blog-gallery img:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .blog-gallery img:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .blog-gallery-label {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(15,110,86,0.88);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 3px;
+  }
+  .blog-media-gallery-wrap {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
   }
   .blog-content .post-date {
     font-size: 12px;
@@ -307,6 +346,7 @@
     .blog-section { padding: 40px 24px; }
     .blog-post { grid-template-columns: 1fr; gap: 24px; }
     .blog-media img, .blog-media video { height: 220px; }
+    .blog-gallery { height: 360px; }
     .cta-section { padding: 60px 24px; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
   }
@@ -370,6 +410,7 @@
           <img src="images/factory/training/training-1.jpg" alt="Vivian explaining the cab controls to the client">
           <img src="images/factory/training/training-2.jpg" alt="Client learning the joystick controls">
           <img src="images/factory/training/training-3.jpg" alt="Client getting the hang of it">
+          <div class="blog-gallery-label">📸 On-site · Operator Training</div>
         </div>
       </div>
       <div class="blog-content">
