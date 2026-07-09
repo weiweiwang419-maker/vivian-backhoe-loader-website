@@ -158,6 +158,18 @@
     .wa-float svg { width: 26px; height: 26px; }
   }
 
+  /* Video Section */
+  .video-section { padding: 80px 40px; background: #f5f5f0; }
+  .video-inner { max-width: 960px; margin: 0 auto; }
+  .video-title { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: var(--primary-dark); }
+  .video-sub { font-size: 15px; color: var(--text-light); margin-bottom: 32px; }
+  .video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(15,110,86,0.15); }
+  .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+  .video-channel { text-align: center; margin-top: 20px; }
+  .video-channel a { color: var(--primary); font-size: 14px; text-decoration: none; font-weight: 600; }
+  .video-channel a:hover { color: var(--accent); }
+  @media (max-width: 768px) { .video-section { padding-left: 24px; padding-right: 24px; } }
+
 </style>
 
   <!-- Structured Data: SEO -->
@@ -333,6 +345,17 @@
       <img src="images/products/bl70-25-5.jpg" alt="BL 70-25 - Cab Close-up — backhoe loader" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
     </div>
     <p style="text-align: center; font-size: 13px; color: var(--text-light); margin-top: 24px; font-style: italic;">📸 Photos taken at the factory, March 2026</p>
+  </div>
+</section>
+
+<section class="video-section">
+  <div class="video-inner">
+    <h2 class="video-title">See the BL 70-25 in Action</h2>
+    <p class="video-sub">Watch the BL 70-25 backhoe loader demonstrate its key features and capabilities.</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/jMaRgJmSnVM" title="BL70-25 Features" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="video-channel">Subscribe to <a href="https://www.youtube.com/@Vivian.Loader-90" target="_blank" rel="noopener">Vivian's YouTube Channel</a> for more machine demos</p>
   </div>
 </section>
 
