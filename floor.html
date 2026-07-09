@@ -207,6 +207,10 @@
     grid-column: 2;
     grid-row: 2;
   }
+  /* Single-photo layout: full width, one row */
+  .blog-gallery.single-photo {
+    grid-template-rows: 420px;
+  }
   /* 2-photo layout: side by side */
   .blog-gallery.two-photos {
     grid-template-columns: 1fr 1fr;
@@ -483,9 +487,8 @@
     <div class="blog-post" id="post-5">
       <div class="blog-media">
         <div class="blog-gallery-wrap">
-          <div class="blog-gallery two-photos">
+          <div class="blog-gallery single-photo">
             <img src="images/factory/bl80-25-engine-check-cab.jpg" alt="Vivian inspecting the BL 80-25 cab area for engine plate verification">
-            <img src="images/factory/bl80-25-engine-check-rear.jpg" alt="Vivian inspecting the BL 80-25 engine plate area — focused on serial number and emission standard">
           </div>
           <div class="blog-gallery-label">📋 Factory Floor · Engine Code Check</div>
         </div>
