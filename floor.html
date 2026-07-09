@@ -207,6 +207,19 @@
     grid-column: 2;
     grid-row: 2;
   }
+  /* 2-photo layout: side by side */
+  .blog-gallery.two-photos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+  }
+  .blog-gallery.two-photos img:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .blog-gallery.two-photos img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
   .blog-gallery-label {
     position: absolute;
     bottom: 12px;
@@ -466,7 +479,33 @@
 <section class="blog-section">
   <div class="blog-grid">
 
-    <!-- Post 1 - Newest: Teaching clients -->
+<!-- Post 5 - Newest: Engine code verification (moved to top) -->
+    <div class="blog-post" id="post-5">
+      <div class="blog-media">
+        <div class="blog-gallery-wrap">
+          <div class="blog-gallery two-photos">
+            <img src="images/factory/bl80-25-engine-check-cab.jpg" alt="Vivian inspecting the BL 80-25 cab area for engine plate verification">
+            <img src="images/factory/bl80-25-engine-check-rear.jpg" alt="Vivian checking the BL 80-25 engine plate and chassis number at the rear">
+          </div>
+          <div class="blog-gallery-label">📋 Factory Floor · Engine Code Check</div>
+        </div>
+      </div>
+      <div class="blog-content">
+        <div class="post-date">Today · Quality Check</div>
+        <h2><a href="#post-5">Why I check every engine number before it ships</a></h2>
+        <p>Today's task: engine code verification on a BL 80-25 — commissioned by the client, not the factory.</p>
+        <p>Here's why this matters. Every country has its own customs rules. Some want the engine number stamped deep, not laser-etched. Some want the chassis plate riveted, not glued. Some want both the engine number AND the emission standard printed on the plate. If any of that is wrong, your container gets held at port. Your buyer pays demurrage. Your project gets delayed by weeks.</p>
+        <p>Last year I watched a client lose three weeks in Lagos because the engine number on the plate was slightly blurry on the customs copy. The machine was fine. The engine was fine. The print quality wasn't.</p>
+        <p>So now I do this. I walk the line. I find every BL 80-25 bound for export. I check the engine plate is stamped deep, the numbers are sharp, and the emission standard matches the destination country. I photograph it. I send the photo to the client before the machine is loaded into the container. Not after. Before.</p>
+        <p>It takes me an hour per machine. It saves my client three weeks of port headaches. That's the trade I make every time.</p>
+        <p class="signature">— Vivian</p>
+      </div>
+    </div>
+
+  
+
+
+    <!-- Post 1 - Operator training -->
     <div class="blog-post" id="post-1">
       <div class="blog-media">
         <div class="blog-gallery-wrap">
@@ -479,7 +518,7 @@
         </div>
       </div>
       <div class="blog-content">
-        <div class="post-date">Today · Operator training</div>
+        <div class="post-date">This week · Operator training</div>
         <h2><a href="#post-1">Teaching a client to drive it in 30 minutes</a></h2>
         <p>A new client came to the yard this morning. He had bought two BL90-25s, first time owning a backhoe loader. He'd only ever driven a regular wheel loader before. He said: <em>"Vivian, I don't want to ship these home and embarrass myself in front of my workers."</em></p>
         <p>So I took him to the parking lot with one machine and a stopwatch. Here's the routine I walked him through — it works for any new operator:</p>
@@ -506,7 +545,8 @@
       </div>
     </div>
 
-    <!-- Post 2 -->
+    
+<!-- Post 2 -->
     <div class="blog-post" id="post-3">
       <div class="blog-media">
         <img src="images/factory/dji_02_工厂全景_灰橙挖掘装载机.jpg" alt="Engine check — backhoe loader">
@@ -521,7 +561,8 @@
       </div>
     </div>
 
-    <!-- Post 3 -->
+    
+<!-- Post 3 -->
     <div class="blog-post" id="post-4">
       <div class="blog-media">
         <img src="images/products/bl70-25-front.jpg" alt="Container loading — backhoe loader">
@@ -535,22 +576,7 @@
       </div>
     </div>
 
-    <!-- Post 5 -->
-    <div class="blog-post" id="post-5">
-      <div class="blog-media">
-        <img src="images/factory/bl80-25-engine-check-cab.jpg" alt="Vivian inspecting the BL 80-25 cab area for engine plate verification">
-      </div>
-      <div class="blog-content">
-        <div class="post-date">Today · Quality Check</div>
-        <h2><a href="#post-5">Why I check every engine number before it ships</a></h2>
-        <p>Today's task: engine code verification on a BL 80-25 — commissioned by the client, not the factory.</p>
-        <p>Here's why this matters. Every country has its own customs rules. Some want the engine number stamped deep, not laser-etched. Some want the chassis plate riveted, not glued. Some want both the engine number AND the emission standard printed on the plate. If any of that is wrong, your container gets held at port. Your buyer pays demurrage. Your project gets delayed by weeks.</p>
-        <p>Last year I watched a client lose three weeks in Lagos because the engine number on the plate was slightly blurry on the customs copy. The machine was fine. The engine was fine. The print quality wasn't.</p>
-        <p>So now I do this. I walk the line. I find every BL 80-25 bound for export. I check the engine plate is stamped deep, the numbers are sharp, and the emission standard matches the destination country. I photograph it. I send the photo to the client before the machine is loaded into the container. Not after. Before.</p>
-        <p>It takes me an hour per machine. It saves my client three weeks of port headaches. That's the trade I make every time.</p>
-        <p class="signature">— Vivian</p>
-      </div>
-    </div>
+    
 
   </div>
 </section>
