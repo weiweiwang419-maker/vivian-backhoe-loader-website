@@ -65,6 +65,7 @@
   .nav-links { display: flex; gap: 36px; list-style: none; }
   .nav-links a { color: var(--text); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--primary); }
+  .nav-links a.active { color: var(--primary); font-weight: 700; border-bottom: 2px solid var(--primary); padding-bottom: 4px; }
   .nav-cta { background: var(--primary); color: #fff !important; padding: 10px 20px; border-radius: 4px; font-size: 13px; }
   .nav-cta:hover { background: var(--primary-dark); color: #fff !important; }
   .logo-icon { width: 28px; height: 28px; vertical-align: middle; margin-right: 8px; display: inline-block; }
@@ -237,7 +238,7 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="floor.html">From the Floor</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
+      <li><a href="quote.html" class="nav-cta" active">Get Quote</a></li>
     </ul>
   </div>
 </nav>
