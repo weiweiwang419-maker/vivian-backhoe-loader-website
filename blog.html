@@ -15,24 +15,34 @@
 <link rel="shortcut icon" href="favicon.ico?v=3">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Vivian | VIVIAN — Backhoe Loader Expert</title>
-<meta name="description" content="Meet Vivian — a real person who checks every backhoe loader before it ships from China. No middleman, no markup games, just honest factory inspection.">
+<title>Blog — Backhoe Loader Buyer Guides & Factory Insights | VIVIAN</title>
+<meta name="description" content="Real-world advice on choosing, buying, and importing backhoe loaders from China. Written by Vivian, a factory-floor consultant who inspects every machine before it ships.">
 <!-- Open Graph / Social Share -->
-<meta property="og:type" content="profile">
-<meta property="og:url" content="https://www.backhoemach.com/about.html">
-<meta property="og:title" content="About Vivian | VIVIAN — Backhoe Loader Expert">
-<meta property="og:description" content="Meet Vivian — a real person who checks every backhoe loader before it ships from China. No middleman, no markup games, just honest factory inspection.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.backhoemach.com/blog.html">
+<meta property="og:title" content="Blog — Backhoe Loader Buyer Guides & Factory Insights | VIVIAN">
+<meta property="og:description" content="Real-world advice on choosing, buying, and importing backhoe loaders from China. Written by Vivian, a factory-floor consultant who inspects every machine before it ships.">
 <meta property="og:image" content="https://www.backhoemach.com/og-default.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="VIVIAN — Backhoe Loader Expert">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.backhoemach.com/about.html">
-<meta name="twitter:title" content="About Vivian | VIVIAN — Backhoe Loader Expert">
-<meta name="twitter:description" content="Meet Vivian — a real person who checks every backhoe loader before it ships from China. No middleman, no markup games, just honest factory inspection.">
+<meta name="twitter:title" content="Blog — Backhoe Loader Buyer Guides & Factory Insights | VIVIAN">
+<meta name="twitter:description" content="Real-world advice on choosing, buying, and importing backhoe loaders from China.">
 <meta name="twitter:image" content="https://www.backhoemach.com/og-default.jpg">
-<link rel="canonical" href="https://www.backhoemach.com/about.html">
+<link rel="canonical" href="https://www.backhoemach.com/blog.html">
+
+<!-- Structured Data: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.backhoemach.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.backhoemach.com/blog.html"}
+  ]
+}
+</script>
+
 <style>
   :root {
     --primary: #0F6E56;
@@ -77,7 +87,14 @@
     color: #ffffff;
   }
   .logo span { color: var(--accent); }
-  .logo-icon { filter: brightness(1.1); }
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+    filter: brightness(1.1);
+  }
   .nav-links {
     display: flex;
     gap: 32px;
@@ -123,15 +140,9 @@
     transition: 0.3s;
     border-radius: 2px;
   }
-  .nav-hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  .nav-hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  .nav-hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
+  .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
   .nav-mobile-menu {
     display: none;
     position: fixed;
@@ -144,11 +155,7 @@
     z-index: 999;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
-  .nav-mobile-menu.open {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
+  .nav-mobile-menu.open { display: flex; flex-direction: column; gap: 18px; }
   .nav-mobile-menu a {
     color: #c0c0c0;
     text-decoration: none;
@@ -172,15 +179,17 @@
   }
 
   @media (max-width: 768px) {
-    /* nav-links hidden on mobile - handled by hamburger menu CSS above */
     .nav-hamburger { display: block; }
     .nav-inner { padding: 0 24px; }
   }
 
+  /* Breadcrumb */
+  .breadcrumb { margin-top: 80px; padding: 20px 40px; font-size: 13px; color: var(--text-light); max-width: 1280px; margin-left: auto; margin-right: auto; }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+
   /* Page Header */
   .page-header {
-    margin-top: 80px;
-    padding: 80px 40px 60px;
+    padding: 40px 40px 60px;
     background: var(--cream);
   }
   .page-header-inner {
@@ -208,174 +217,120 @@
     line-height: 1.6;
   }
 
-  /* Story Section */
-  .story-section {
-    padding: 100px 40px;
+  /* Blog Grid */
+  .blog-main {
+    padding: 80px 40px;
     max-width: 1280px;
     margin: 0 auto;
   }
-  .story-grid {
+  .blog-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .story-photo img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-  }
-  .story-content h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 24px;
-    letter-spacing: -0.5px;
-  }
-  .story-content p {
-    font-size: 16px;
-    color: var(--text-light);
-    line-height: 1.8;
-    margin-bottom: 20px;
-  }
-  .story-content .highlight {
-    background: var(--cream);
-    padding: 24px;
-    border-radius: 8px;
-    border-left: 4px solid var(--accent);
-    margin: 32px 0;
-  }
-  .story-content .highlight p {
-    margin-bottom: 0;
-    font-style: italic;
-    color: var(--primary-dark);
-    font-size: 17px;
-  }
-
-  /* Why Trust Section */
-  .trust-section {
-    background: var(--primary);
-    padding: 100px 40px;
-    color: #fff;
-  }
-  .trust-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .trust-section .section-eyebrow { color: var(--accent); }
-  .trust-section h2 {
-    font-size: clamp(32px, 4vw, 48px);
-    font-weight: 700;
-    margin-bottom: 60px;
-    max-width: 800px;
-  }
-  .trust-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 40px;
   }
-  .trust-card {
-    background: rgba(255,255,255,0.08);
-    padding: 40px 32px;
+  .blog-card {
+    background: #fff;
+    border: 1px solid var(--border);
     border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
   }
-  .trust-number {
-    font-size: 48px;
-    font-weight: 800;
-    color: var(--accent);
-    margin-bottom: 16px;
-    opacity: 0.6;
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   }
-  .trust-card h3 {
-    font-size: 22px;
+  .blog-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background: #f5f5f5;
+  }
+  .blog-card-content {
+    padding: 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-category {
+    font-size: 11px;
+    color: var(--primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
     margin-bottom: 12px;
   }
-  .trust-card p {
-    color: rgba(255,255,255,0.8);
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  /* Workshop Section */
-  .workshop-section {
-    padding: 100px 40px;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .workshop-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-  }
-  .workshop-photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  .workshop-photos img {
-    width: 100%;
-    border-radius: 8px;
-    height: 200px;
-    object-fit: cover;
-  }
-  .workshop-content h2 {
-    font-size: 32px;
+  .blog-card h2 {
+    font-size: 22px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
   }
-  .workshop-content p {
-    font-size: 16px;
+  .blog-card p {
     color: var(--text-light);
-    line-height: 1.8;
-    margin-bottom: 16px;
+    font-size: 15px;
+    flex: 1;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
-  .workshop-content .signature {
-    font-style: italic;
+  .blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .blog-meta .read-time {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .blog-read-more {
     color: var(--primary);
-    font-size: 18px;
-    margin-top: 32px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 16px;
+    text-decoration: none;
   }
 
   /* CTA Section */
   .cta-section {
-    background: var(--cream);
-    padding: 100px 40px;
+    background: var(--primary);
+    padding: 80px 40px;
     text-align: center;
   }
   .cta-inner {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
   }
   .cta-section h2 {
-    font-size: clamp(28px, 4vw, 42px);
+    color: #fff;
+    font-size: clamp(28px, 4vw, 40px);
     font-weight: 700;
     margin-bottom: 20px;
+    letter-spacing: -0.5px;
   }
   .cta-section p {
-    font-size: 18px;
-    color: var(--text-light);
-    margin-bottom: 40px;
+    color: rgba(255,255,255,0.85);
+    font-size: 17px;
+    margin-bottom: 32px;
     line-height: 1.6;
   }
   .cta-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--primary);
-    color: #fff;
-    padding: 20px 40px;
+    display: inline-block;
+    background: var(--accent);
+    color: var(--primary-dark);
+    padding: 16px 36px;
     border-radius: 4px;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
-    transition: transform 0.2s, background 0.2s;
+    transition: transform 0.2s;
   }
-  .cta-btn:hover {
-    transform: translateY(-2px);
-    background: var(--primary-dark);
-  }
+  .cta-btn:hover { transform: translateY(-2px); }
 
   /* Footer */
   footer {
@@ -391,66 +346,25 @@
     gap: 60px;
     margin-bottom: 40px;
   }
-  .footer-brand h4 {
-    color: #fff;
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  .footer-brand p {
-    font-size: 14px;
-    line-height: 1.7;
-    max-width: 400px;
-  }
-  footer h5 {
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+  .footer-brand h4 { color: #fff; font-size: 20px; margin-bottom: 12px; }
+  .footer-brand p { font-size: 14px; line-height: 1.7; max-width: 400px; }
+  footer h5 { color: #fff; font-size: 14px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
   footer ul { list-style: none; }
   footer li { margin-bottom: 8px; font-size: 14px; }
   footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
   footer a:hover { color: var(--accent); }
-  .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 24px;
-    text-align: center;
-    font-size: 13px;
-  }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; font-size: 13px; }
+  .footer-logo { width: 36px; height: 36px; vertical-align: middle; margin-right: 10px; display: inline-block; }
+  .footer-logo-row { display: flex; align-items: center; margin-bottom: 12px; }
 
-  /* Responsive */
   @media (max-width: 768px) {
-    /* nav-links hidden on mobile - handled by hamburger menu CSS above */
-    .page-header { padding: 60px 24px 40px; }
-    .story-section, .workshop-section { padding: 60px 24px; }
-    .story-grid, .workshop-grid { grid-template-columns: 1fr; gap: 40px; }
-    .trust-section { padding: 60px 24px; }
-    .trust-grid { grid-template-columns: 1fr; gap: 24px; }
-    .cta-section { padding: 60px 24px; }
+    .page-header { padding: 30px 24px 40px; }
+    .blog-main { padding: 40px 24px; }
+    .blog-grid { grid-template-columns: 1fr; gap: 24px; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+    .cta-section { padding: 60px 24px; }
   }
 
-  /* Logo Icon */
-  .logo-icon {
-    width: 28px;
-    height: 28px;
-    vertical-align: middle;
-    margin-right: 8px;
-    display: inline-block;
-  }
-  .footer-logo {
-    width: 36px;
-    height: 36px;
-    vertical-align: middle;
-    margin-right: 10px;
-    display: inline-block;
-  }
-  .footer-logo-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-  }
   /* WhatsApp Floating Button */
   .wa-float {
     position: fixed;
@@ -486,34 +400,11 @@
     .wa-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
     .wa-float svg { width: 26px; height: 26px; }
   }
-
-
-  .breadcrumb { margin-top: 80px; padding: 20px 40px; font-size: 13px; color: var(--text-light); max-width: 1280px; margin-left: auto; margin-right: auto; }
-  .breadcrumb a { color: var(--primary); text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
+  .social-row { display:flex; gap:10px; margin-top:16px; align-items:center; flex-wrap:wrap; }
+  .social-row .social-label { font-size:12px; opacity:0.5; margin-right:2px; }
+  .social-row a { display:inline-flex; width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.08); align-items:center; justify-content:center; transition:all 0.2s ease; color:rgba(255,255,255,0.7); text-decoration:none; }
+  .social-row a:hover { background:rgba(255,255,255,0.2); color:#fff; transform:translateY(-2px); }
 </style>
-
-  <!-- Structured Data: SEO -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.backhoemach.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "About",
-      "item": "https://www.backhoemach.com/about.html"
-    }
-  ]
-}
-  </script>
 </head>
 <body>
 
@@ -524,11 +415,11 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <li><a href="index.html#floor">From the Floor</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="floor.html">From the Floor</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
     </ul>
     <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
@@ -539,105 +430,86 @@
 <div class="nav-mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
   <a href="products.html">Products</a>
-  <a href="blog.html">Blog</a>
+  <a href="blog.html" class="active">Blog</a>
   <a href="gallery.html">Gallery</a>
   <a href="faq.html">FAQ</a>
   <a href="floor.html">From the Floor</a>
   <a href="about.html">About</a>
   <a href="quote.html" class="nav-cta-mobile">Get Quote</a>
 </div>
-<div class="breadcrumb"><a href="index.html">Home</a> / About Vivian</div>
+<div class="breadcrumb"><a href="index.html">Home</a> / Blog</div>
 
 <!-- Page Header -->
 <section class="page-header">
   <div class="page-header-inner">
-    <div class="page-eyebrow">About me</div>
-    <h1 class="page-title">I'm Vivian.<br>And I work the floor.</h1>
-    <p class="page-subtitle">Not a salesperson. Not a trading company. A real person who checks every machine before it leaves the factory — because your money, your project, your reputation, that's on me.</p>
+    <div class="page-eyebrow">Buyer guides & factory insights</div>
+    <h1 class="page-title">What I've learned<br>from 200+ inspections.</h1>
+    <p class="page-subtitle">I don't write theory. I write what I see on the factory floor every day — what breaks, what lasts, what I'd buy with my own money. If you're sourcing a backhoe loader from China, start here.</p>
   </div>
 </section>
 
-<!-- My Story -->
-<section class="story-section">
-  <div class="story-grid">
-    <div class="story-photo">
-      <img src="images/factory/dji_01_奥力特工厂_橙色装载机队伍.jpg" alt="Vivian at the factory — backhoe loader" loading="lazy">
-    </div>
-    <div class="story-content">
-      <h2>Why I do this.</h2>
-      <p>I've been in the machinery export business for years. And I got tired of watching good people get burned.</p>
-      <p>You know the story: a buyer finds a "great deal" online. Pays upfront. Waits 45 days. Container arrives. Machine shows up and it's not what they ordered. Or it breaks in 3 weeks. Or the "supplier" stops replying.</p>
-      <div class="highlight">
-        <p>"I'm not here to make a quick sale. I'm here to be the consultant you call back."</p>
-      </div>
-      <p>So I built a different model. No company brand. No fancy office. Just me, the factory floor, and a WhatsApp number that actually gets answered.</p>
-      <p>I inspect every machine before it ships. I reject more than I approve. I tell you when you don't need the expensive option. Because I want you to call me again in two years — not because you have to, but because you trust me.</p>
-    </div>
-  </div>
-</section>
+<!-- Blog Grid -->
+<section class="blog-main">
+  <div class="blog-grid">
 
-<!-- Why Trust Me -->
-<section class="trust-section">
-  <div class="trust-inner">
-    <div class="page-eyebrow" style="color: var(--accent);">Why you can trust me</div>
-    <h2>I'm not asking you to trust a company.<br>I'm asking you to trust a person.</h2>
-    <div class="trust-grid">
-      <div class="trust-card">
-        <div class="trust-number">01</div>
-        <h3>I'm on the floor every day</h3>
-        <p>I don't sit in an office and forward emails. I'm at the factory, checking welds, testing hydraulics, watching the loading crew. If something's wrong, I see it before you do.</p>
+    <!-- Article 1 -->
+    <a href="blog-how-to-choose-backhoe-loader.html" class="blog-card">
+      <img src="images/gallery/workshop/workshop-1.jpg" alt="Backhoe loader selection guide — factory floor view" loading="lazy">
+      <div class="blog-card-content">
+        <div class="blog-category">Buying Guide</div>
+        <h2>How to Choose a Backhoe Loader for Your Project</h2>
+        <p>Engine power, dig depth, operating weight — what actually matters for your job site? I break down the 5 decisions that determine whether you get the right machine or an expensive mistake.</p>
+        <div class="blog-meta">
+          <span>July 13, 2026</span>
+          <span class="read-time">6 min read</span>
+        </div>
+        <span class="blog-read-more">Read article →</span>
       </div>
-      <div class="trust-card">
-        <div class="trust-number">02</div>
-        <h3>I tell you "no"</h3>
-        <p>If a machine isn't ready, I won't ship it. If you don't need the expensive model, I'll tell you. I've lost sales by being honest — and gained clients for life because of it.</p>
-      </div>
-      <div class="trust-card">
-        <div class="trust-number">03</div>
-        <h3>You can reach me</h3>
-        <p>WhatsApp. Email. Video call at the factory. I'm not a call center. When you message me, you get me. Usually within an hour during GMT+8 working hours.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </a>
 
-<!-- Workshop Photos -->
-<section class="workshop-section">
-  <div class="workshop-grid">
-    <div class="workshop-photos">
-      <img src="images/factory/dji_02_工厂全景_灰橙挖掘装载机.jpg" alt="Factory view — backhoe loader" loading="lazy">
-      <img src="images/factory/dji_03_工厂前_银橙产品矩阵.jpg" alt="Products at factory — backhoe loader" loading="lazy">
-      <img src="images/factory/dji_04_红色装载机_V字队形.jpg" alt="Red machines — backhoe loader" loading="lazy">
-      <img src="images/products/bl70-25-front.jpg" alt="Close up" loading="lazy">
-    </div>
-    <div class="workshop-content">
-      <div class="page-eyebrow">What I actually do</div>
-      <h2>Every day, it's the same thing.</h2>
-      <p>I walk into the factory. I check what's being built. I talk to the workers. I look at the hydraulic routing. I start the engine and listen.</p>
-      <p>Some days I approve a shipment. Some days I send six machines back to the workshop. Both are part of the job.</p>
-      <p>The stuff I post on "From the Floor" — that's not marketing. That's just what I saw that day. The good, the bad, the "are you kidding me" moments.</p>
-      <p>This is a real job. And I'm a real person doing it.</p>
-      <p class="signature">— Vivian</p>
-    </div>
+    <!-- Article 2 -->
+    <a href="blog-backhoe-loader-price-china.html" class="blog-card">
+      <img src="images/gallery/shipping/shipping-1.jpg" alt="Backhoe loader shipping and pricing" loading="lazy">
+      <div class="blog-card-content">
+        <div class="blog-category">Pricing</div>
+        <h2>Backhoe Loader Price in China — What Really Affects the Cost</h2>
+        <p>Why two machines that look identical can differ by $8,000. Engine brand, hydraulic system, cab quality, tire grade — I explain what you're actually paying for, and where suppliers hide costs.</p>
+        <div class="blog-meta">
+          <span>July 13, 2026</span>
+          <span class="read-time">5 min read</span>
+        </div>
+        <span class="blog-read-more">Read article →</span>
+      </div>
+    </a>
+
+    <!-- Article 3 -->
+    <a href="blog-import-machinery-from-china.html" class="blog-card">
+      <img src="images/gallery/shipping/shipping-3.jpg" alt="Container loading for machinery export" loading="lazy">
+      <div class="blog-card-content">
+        <div class="blog-category">Import Guide</div>
+        <h2>How to Import Construction Machinery from China — Step by Step</h2>
+        <p>From first message to your port: the complete process. Documents, payment terms, shipping routes, customs clearance. Everything I wish my first client had known before they started.</p>
+        <div class="blog-meta">
+          <span>July 13, 2026</span>
+          <span class="read-time">7 min read</span>
+        </div>
+        <span class="blog-read-more">Read article →</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-section">
   <div class="cta-inner">
-    <h2>Want to see for yourself?</h2>
-    <p>Text me on WhatsApp. I'll send you a video of the machine you're asking about — filmed right there at the factory, not a stock photo from 2019.</p>
-    <a href="https://wa.me/8618911415465" class="cta-btn">💬 Text me on WhatsApp →</a>
+    <h2>Have a question I haven't answered?</h2>
+    <p>Message me directly. I reply to every WhatsApp message myself — usually within an hour during work hours. No bots, no sales team, just me.</p>
+    <a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%20have%20a%20question%20about%20backhoe%20loaders." class="cta-btn">Text me on WhatsApp</a>
   </div>
 </section>
 
 <!-- Footer -->
-<style>
-  .social-row { display:flex; gap:10px; margin-top:16px; align-items:center; flex-wrap:wrap; }
-  .social-row .social-label { font-size:12px; opacity:0.5; margin-right:2px; }
-  .social-row a { display:inline-flex; width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.08); align-items:center; justify-content:center; transition:all 0.2s ease; color:rgba(255,255,255,0.7); text-decoration:none; }
-  .social-row a:hover { background:rgba(255,255,255,0.2); color:#fff; transform:translateY(-2px); }
-</style>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -647,17 +519,19 @@
     <div>
       <h5>Quick links</h5>
       <ul>
-        <li><a href="products.html">Products</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Vivian</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="faq.html">FAQ</a></li>
-      <li><a href="index.html#floor">From the Floor</a></li>
+        <li><a href="floor.html">From the Floor</a></li>
+        <li><a href="about.html">About Vivian</a></li>
         <li><a href="quote.html">Get a Quote</a></li>
       </ul>
     </div>
     <div>
       <h5>Get in touch</h5>
       <ul>
-        <li><a href="https://wa.me/8618911415465">WhatsApp</a></li>
+        <li><a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20a%20backhoe%20loader.">WhatsApp</a></li>
         <li><a href="mailto:vivian.aolite@gmail.com">Email</a></li>
         <li>Mon-Sat, 8am-6pm GMT+8</li>
       </ul>
@@ -680,13 +554,11 @@
   </div>
 </footer>
 
-
 <!-- WhatsApp Float -->
-<a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%27d%20like%20to%20know%20more%20about%20you%20and%20how%20you%20work." class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%20read%20your%20blog%20and%20have%20a%20question." class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
   <span class="wa-float-pulse"></span>
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
-
 
 <script>
 function toggleMobileMenu() {
