@@ -1,0 +1,247 @@
+[
+  {
+    "name_cn": "0.4T-0.7T",
+    "slug": "attachment-0.4T-0.7T",
+    "image": "attachment-0.4T-0.7T.jpg",
+    "compat": "All models",
+    "name_en": "Attachment 0.4T 0.7T"
+  },
+  {
+    "name_cn": "四合一铲斗",
+    "slug": "4-in-1-bucket",
+    "image": "4-in-1-bucket.jpg",
+    "compat": "All models",
+    "name_en": "4 In 1 Bucket"
+  },
+  {
+    "name_cn": "斗抓",
+    "slug": "bucket-clamp",
+    "image": "bucket-clamp.jpg",
+    "compat": "All models",
+    "name_en": "Bucket Clamp"
+  },
+  {
+    "name_cn": "筛选钭",
+    "slug": "screening-bucket",
+    "image": "screening-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Screening Bucket"
+  },
+  {
+    "name_cn": "小挖斗",
+    "slug": "narrow-bucket",
+    "image": "narrow-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Narrow Bucket"
+  },
+  {
+    "name_cn": "抓草机",
+    "slug": "grass-grabber",
+    "image": "grass-grabber.jpg",
+    "compat": "All models",
+    "name_en": "Grass Grabber"
+  },
+  {
+    "name_cn": "抓木机",
+    "slug": "wood-grabber",
+    "image": "wood-grabber.jpg",
+    "compat": "All models",
+    "name_en": "Wood Grabber"
+  },
+  {
+    "name_cn": "抱夹",
+    "slug": "bale-clamp",
+    "image": "bale-clamp.jpg",
+    "compat": "All models",
+    "name_en": "Bale Clamp"
+  },
+  {
+    "name_cn": "一字推雪板",
+    "slug": "straight-snow-plow",
+    "image": "straight-snow-plow.jpg",
+    "compat": "All models",
+    "name_en": "Straight Snow Plow"
+  },
+  {
+    "name_cn": "V型推雪板",
+    "slug": "v-snow-plow",
+    "image": "v-snow-plow.jpg",
+    "compat": "All models",
+    "name_en": "V Snow Plow"
+  },
+  {
+    "name_cn": "扫雪机",
+    "slug": "snow-sweeper",
+    "image": "snow-sweeper.jpg",
+    "compat": "All except BL 604",
+    "name_en": "Snow Sweeper"
+  },
+  {
+    "name_cn": "螺旋钻",
+    "slug": "earth-auger",
+    "image": "earth-auger.jpg",
+    "compat": "All models",
+    "name_en": "Earth Auger"
+  },
+  {
+    "name_cn": "拔树机",
+    "slug": "tree-stump-puller",
+    "image": "tree-stump-puller.jpg",
+    "compat": "All models",
+    "name_en": "Tree Stump Puller"
+  },
+  {
+    "name_cn": "平地斗",
+    "slug": "leveling-bucket",
+    "image": "leveling-bucket.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Leveling Bucket"
+  },
+  {
+    "name_cn": "搅拌斗",
+    "slug": "mixing-bucket",
+    "image": "mixing-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Mixing Bucket"
+  },
+  {
+    "name_cn": "窄斗",
+    "slug": "narrow-digging-bucket",
+    "image": "narrow-digging-bucket.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Narrow Digging Bucket"
+  },
+  {
+    "name_cn": "2.4立方米沃尔沃铲斗",
+    "slug": "volvo-bucket-2.4m3",
+    "image": "volvo-bucket-2.4m3.jpg",
+    "compat": "All models",
+    "name_en": "Volvo Bucket 2.4M3"
+  },
+  {
+    "name_cn": "迷你标准铲斗",
+    "slug": "mini-standard-bucket",
+    "image": "mini-standard-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Mini Standard Bucket"
+  },
+  {
+    "name_cn": "迷你开沟机",
+    "slug": "mini-trencher",
+    "image": "mini-trencher.jpg",
+    "compat": "All models",
+    "name_en": "Mini Trencher"
+  },
+  {
+    "name_cn": "配件出口包装",
+    "slug": "export-packaging",
+    "image": "export-packaging.jpg",
+    "compat": "Export packaging",
+    "name_en": "Export Packaging"
+  },
+  {
+    "name_cn": "破碎锤",
+    "slug": "hydraulic-breaker",
+    "image": "hydraulic-breaker.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Hydraulic Breaker"
+  },
+  {
+    "name_cn": "清扫机",
+    "slug": "sweeping-machine",
+    "image": "sweeping-machine.jpg",
+    "compat": "All models",
+    "name_en": "Sweeping Machine"
+  },
+  {
+    "name_cn": "旋转抓木夹",
+    "slug": "rotating-wood-clamp",
+    "image": "rotating-wood-clamp.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Rotating Wood Clamp"
+  },
+  {
+    "name_cn": "雪斗",
+    "slug": "snow-bucket",
+    "image": "snow-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Snow Bucket"
+  },
+  {
+    "name_cn": "碎木机",
+    "slug": "wood-chipper",
+    "image": "wood-chipper.jpg",
+    "compat": "All models",
+    "name_en": "Wood Chipper"
+  },
+  {
+    "name_cn": "割草机",
+    "slug": "mower",
+    "image": "mower.jpg",
+    "compat": "All except BL 604",
+    "name_en": "Mower"
+  },
+  {
+    "name_cn": "抱抓",
+    "slug": "grab-clamp",
+    "image": "grab-clamp.jpg",
+    "compat": "All models",
+    "name_en": "Grab Clamp"
+  },
+  {
+    "name_cn": "高空吊篮",
+    "slug": "aerial-work-platform",
+    "image": "aerial-work-platform.jpg",
+    "compat": "All models",
+    "name_en": "Aerial Work Platform"
+  },
+  {
+    "name_cn": "迷你自动力清扫机",
+    "slug": "mini-self-propelled-sweeper",
+    "image": "mini-self-propelled-sweeper.jpg",
+    "compat": "BL 604 only",
+    "name_en": "Mini Self Propelled Sweeper"
+  },
+  {
+    "name_cn": "修剪机",
+    "slug": "trimmer",
+    "image": "trimmer.jpg",
+    "compat": "All models",
+    "name_en": "Trimmer"
+  },
+  {
+    "name_cn": "1.4立方米沃尔沃铲斗",
+    "slug": "volvo-bucket-1.4m3",
+    "image": "volvo-bucket-1.4m3.jpg",
+    "compat": "All except BL 604",
+    "name_en": "Volvo Bucket 1.4M3"
+  },
+  {
+    "name_cn": "封闭式扫地机",
+    "slug": "enclosed-sweeper",
+    "image": "enclosed-sweeper.jpg",
+    "compat": "All except BL 604",
+    "name_en": "Enclosed Sweeper"
+  },
+  {
+    "name_cn": "割草机",
+    "slug": "mower",
+    "image": "mower.jpg",
+    "compat": "All except BL 604",
+    "name_en": "Mower"
+  },
+  {
+    "name_cn": "吹雪机",
+    "slug": "snow-blower",
+    "image": "snow-blower.jpg",
+    "compat": "All except BL 604",
+    "name_en": "Snow Blower"
+  },
+  {
+    "name_cn": "柴油车扫雪机",
+    "slug": "diesel-snow-sweeper",
+    "image": "diesel-snow-sweeper.jpg",
+    "compat": "All models",
+    "name_en": "Diesel Snow Sweeper"
+  }
+]
