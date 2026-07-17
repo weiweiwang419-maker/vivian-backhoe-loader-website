@@ -306,35 +306,187 @@
     align-self: flex-start;
   }
 
-  /* Parts Placeholder Section */
-  .parts-section {
+  /* Parts Catalog Section */
+  .parts-catalog {
     background: var(--cream);
-    padding: 60px 40px;
-    text-align: center;
+    padding: 80px 40px;
   }
-  .parts-inner {
-    max-width: 700px;
+  .parts-catalog-inner {
+    max-width: 1280px;
     margin: 0 auto;
   }
-  .parts-section h2 {
-    font-size: 32px;
-    font-weight: 800;
+  .parts-intro {
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+  .parts-intro .section-tag {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     margin-bottom: 16px;
   }
-  .parts-section p {
+  .parts-intro h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .parts-intro p {
     color: var(--text-light);
     font-size: 16px;
-    margin-bottom: 28px;
-    line-height: 1.7;
+    line-height: 1.8;
   }
-  .parts-coming {
+  .parts-intro p em {
+    color: var(--primary);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* Category Filter */
+  .parts-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  .parts-filter-btn {
+    padding: 8px 18px;
+    border: 2px solid var(--border);
+    background: #fff;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .parts-filter-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .parts-filter-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+  }
+  .parts-filter-btn .count {
+    font-size: 11px;
+    opacity: 0.6;
+    margin-left: 4px;
+  }
+
+  /* Parts Grid */
+  .parts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .part-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 20px 20px;
+    transition: all 0.25s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .part-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 8px 24px rgba(15, 110, 86, 0.1);
+    transform: translateY(-2px);
+  }
+  .part-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--primary);
+    margin-bottom: 14px;
+  }
+  .part-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  .part-card .part-name-en {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .part-card .part-name-cn {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .part-card .part-desc {
+    font-size: 12px;
+    color: var(--text-light);
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+  .part-card .part-badge {
     display: inline-block;
-    padding: 12px 28px;
-    border: 2px dashed var(--border);
-    border-radius: 8px;
+    margin-top: 12px;
+    padding: 3px 10px;
+    background: var(--cream);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.3px;
+    align-self: flex-start;
+  }
+  .part-card .vivian-tip {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: rgba(239, 159, 39, 0.08);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .part-card .vivian-tip::before {
+    content: "Vivian: ";
+    font-weight: 700;
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  /* Parts Bottom CTA */
+  .parts-bottom-cta {
+    margin-top: 40px;
+    text-align: center;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .parts-bottom-cta h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .parts-bottom-cta p {
     color: var(--text-light);
     font-size: 14px;
-    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .parts-catalog { padding: 60px 20px; }
+    .parts-grid { grid-template-columns: 1fr; }
+    .parts-filter { gap: 6px; }
+    .parts-filter-btn { padding: 6px 14px; font-size: 12px; }
   }
 
   /* CTA Section */
@@ -888,14 +1040,556 @@
   </div>
 </section>
 
-<!-- Parts Placeholder -->
-<section class="parts-section">
-  <div class="parts-inner">
-    <h2>Parts & Components</h2>
-    <p>Engine parts, hydraulic components, filters, seals, bearings, and wear parts &mdash; coming soon. I'm cataloging every part I can source from the factory. Need something specific right now? Message me on WhatsApp and I'll quote you directly.</p>
-    <span class="parts-coming">Coming Soon &mdash; Under Construction</span>
+<!-- Parts Catalog -->
+<section class="parts-catalog" id="parts">
+  <div class="parts-catalog-inner">
+    <div class="parts-intro">
+      <span class="section-tag">Spare Parts Catalog</span>
+      <h2>70 Parts I Source From the Factory Floor</h2>
+      <p>These are the components I ship most often &mdash; the ones that break, wear out, or need replacing after long hours in the field. Every part on this list fits <em>all 8 backhoe loader models</em> I sell (BL 15-06 through BL 105-25). No part numbers here because I don't want you guessing &mdash; <em>message me with your machine model and I'll send you the exact part number and price.</em></p>
+    </div>
+
+    <div class="parts-filter" role="tablist">
+      <button class="parts-filter-btn active" data-cat="all">All Parts <span class="count">(70)</span></button>
+      <button class="parts-filter-btn" data-cat="cylinders">Hydraulic Cylinders <span class="count">(8)</span></button>
+      <button class="parts-filter-btn" data-cat="filters">Filters <span class="count">(6)</span></button>
+      <button class="parts-filter-btn" data-cat="hydraulic">Hydraulic System <span class="count">(10)</span></button>
+      <button class="parts-filter-btn" data-cat="engine">Engine Components <span class="count">(12)</span></button>
+      <button class="parts-filter-btn" data-cat="electrical">Electrical &amp; Sensors <span class="count">(8)</span></button>
+      <button class="parts-filter-btn" data-cat="brake">Brake System <span class="count">(5)</span></button>
+      <button class="parts-filter-btn" data-cat="transmission">Transmission &amp; Axle <span class="count">(8)</span></button>
+      <button class="parts-filter-btn" data-cat="structural">Structural &amp; Wear Parts <span class="count">(8)</span></button>
+      <button class="parts-filter-btn" data-cat="hardware">Pins, Bushings &amp; Seals <span class="count">(5)</span></button>
+    </div>
+
+    <div class="parts-grid">
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Tilt Cylinder</div>
+        <div class="part-name-cn">转斗油缸</div>
+        <div class="part-desc">Controls loader bucket tilt. High-wear seal kit recommended.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">Keep a spare seal kit — this one leaks first.</div>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Lift Cylinder</div>
+        <div class="part-name-cn">举升油缸</div>
+        <div class="part-desc">Raises and lowers the loader boom. Chrome rod surface critical.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Swing Cylinder</div>
+        <div class="part-name-cn">回转油缸</div>
+        <div class="part-desc">Rotates the backhoe arm left and right. Side-load sensitive.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Boom Cylinder (Backhoe)</div>
+        <div class="part-name-cn">大臂油缸</div>
+        <div class="part-desc">Lifts the backhoe boom. High-pressure, large-bore design.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Crowd Cylinder</div>
+        <div class="part-name-cn">斗杆油缸</div>
+        <div class="part-desc">Controls dipper arm movement. Most cycled cylinder on site.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Stabilizer Cylinder</div>
+        <div class="part-name-cn">支腿油缸</div>
+        <div class="part-desc">Deploys outrigger legs for digging stability. Check pin wear.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Steering Cylinder</div>
+        <div class="part-name-cn">转向油缸</div>
+        <div class="part-desc">Articulated steering actuator. Leak-check every 500 hrs.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="cylinders">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="2"/><line x1="24" y1="8" x2="24" y2="4"/><rect x="16" y="14" width="16" height="20" rx="1"/><line x1="20" y1="40" x2="20" y2="46"/><line x1="28" y1="40" x2="28" y2="46"/><circle cx="24" cy="24" r="3"/></svg></div>
+        <div class="part-name-en">Cylinder Seal Kit</div>
+        <div class="part-name-cn">油缸密封 kit</div>
+        <div class="part-desc">Complete rebuild kit: piston seal, rod seal, dust wiper, O-rings.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">I stock seal kits for all 8 models. Don't wait for a leak.</div>
+      </div>
+      <div class="part-card" data-cat="filters">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h32L28 24v16l-8 4V24z"/><line x1="8" y1="8" x2="40" y2="8"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="20" y1="20" x2="28" y2="20"/></svg></div>
+        <div class="part-name-en">Fuel Filter</div>
+        <div class="part-name-cn">燃油滤清器</div>
+        <div class="part-desc">Diesel fuel primary filter. Replace every 500 hrs.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">Bad diesel in Africa? Change this every 250 hrs.</div>
+      </div>
+      <div class="part-card" data-cat="filters">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h32L28 24v16l-8 4V24z"/><line x1="8" y1="8" x2="40" y2="8"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="20" y1="20" x2="28" y2="20"/></svg></div>
+        <div class="part-name-en">Oil Filter</div>
+        <div class="part-name-cn">机油滤清器</div>
+        <div class="part-desc">Engine lubricating oil filter. Spin-on type, standard thread.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="filters">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h32L28 24v16l-8 4V24z"/><line x1="8" y1="8" x2="40" y2="8"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="20" y1="20" x2="28" y2="20"/></svg></div>
+        <div class="part-name-en">Air Filter</div>
+        <div class="part-name-cn">空气滤清器</div>
+        <div class="part-desc">Engine intake air filter element. Dry-type paper.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="filters">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h32L28 24v16l-8 4V24z"/><line x1="8" y1="8" x2="40" y2="8"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="20" y1="20" x2="28" y2="20"/></svg></div>
+        <div class="part-name-en">Hydraulic Oil Filter</div>
+        <div class="part-name-cn">液压油滤芯</div>
+        <div class="part-desc">Return-line hydraulic filter. 10 micron rating.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="filters">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h32L28 24v16l-8 4V24z"/><line x1="8" y1="8" x2="40" y2="8"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="20" y1="20" x2="28" y2="20"/></svg></div>
+        <div class="part-name-en">Transmission Filter</div>
+        <div class="part-name-cn">变速箱滤网</div>
+        <div class="part-desc">Transmission suction strainer. Clean at every oil change.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="filters">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h32L28 24v16l-8 4V24z"/><line x1="8" y1="8" x2="40" y2="8"/><line x1="16" y1="14" x2="32" y2="14"/><line x1="20" y1="20" x2="28" y2="20"/></svg></div>
+        <div class="part-name-en">Air Compressor Filter</div>
+        <div class="part-name-cn">空压机滤芯</div>
+        <div class="part-desc">Air brake compressor intake filter. Often forgotten.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Variable Displacement Pump</div>
+        <div class="part-name-cn">变量柱塞泵</div>
+        <div class="part-desc">Main hydraulic pump. Load-sensing, axial piston design.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Gear Pump</div>
+        <div class="part-name-cn">齿轮泵</div>
+        <div class="part-desc">Auxiliary pump for pilot and cooling circuits.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Steering Orbital Valve</div>
+        <div class="part-name-cn">全液压转向器</div>
+        <div class="part-desc">Hydrostatic steering unit. Sensitive to contamination.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Priority Valve</div>
+        <div class="part-name-cn">优先阀</div>
+        <div class="part-desc">Directs flow to steering first, then working circuits.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">8-Spool Control Valve</div>
+        <div class="part-name-cn">八联多路阀</div>
+        <div class="part-desc">Main directional control valve bank. 8 spools, pilot-operated.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">3-Spool Control Valve</div>
+        <div class="part-name-cn">三联多路阀</div>
+        <div class="part-desc">Auxiliary valve bank for attachments. 3 spools.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Pilot Valve</div>
+        <div class="part-name-cn">先导阀</div>
+        <div class="part-desc">Low-pressure pilot control valve for joystick operation.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Solenoid Switching Valve</div>
+        <div class="part-name-cn">电磁切换阀</div>
+        <div class="part-desc">24V DC solenoid valve for circuit switching.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Hydraulic Tank</div>
+        <div class="part-name-cn">液压油箱</div>
+        <div class="part-desc">Reservoir with sight gauge and breather. 100L capacity.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hydraulic">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><path d="M24 10v-4M24 38v4M10 24H6M38 24h4M14 14l-3-3M34 34l3 3M14 34l-3 3M34 14l3-3"/></svg></div>
+        <div class="part-name-en">Hydraulic Hose Assembly</div>
+        <div class="part-name-cn">液压软管总成</div>
+        <div class="part-desc">SAE 100R2AT standard. Custom lengths available.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">Send me a photo of your old hose — I'll match the fittings.</div>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Fuel Injection Pump</div>
+        <div class="part-name-cn">喷油泵</div>
+        <div class="part-desc">Diesel fuel injection pump. Calibrated to engine model.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Fuel Transfer Pump</div>
+        <div class="part-name-cn">输油泵</div>
+        <div class="part-desc">Lifts fuel from tank to injection pump. Diaphragm type.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Water Pump</div>
+        <div class="part-name-cn">水泵</div>
+        <div class="part-desc">Engine coolant circulation pump. Mechanical seal.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Oil Pump</div>
+        <div class="part-name-cn">机油泵</div>
+        <div class="part-desc">Engine lubricating oil pump. Rotor-type, gear-driven.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Alternator</div>
+        <div class="part-name-cn">发电机</div>
+        <div class="part-desc">28V 55A charging alternator. External regulator.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Starter Motor</div>
+        <div class="part-name-cn">起动机</div>
+        <div class="part-desc">24V electric starter. 4.5kW, 11-tooth pinion.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Turbocharger</div>
+        <div class="part-name-cn">增压器</div>
+        <div class="part-desc">Exhaust-driven turbo. Oil-fed, water-cooled bearing housing.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">Let the engine idle 30s before shutdown — saves the turbo.</div>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Thermostat</div>
+        <div class="part-name-cn">节温器</div>
+        <div class="part-desc">Coolant thermostat. Opens at 82&deg;C. Prevents overheating.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Engine Fan</div>
+        <div class="part-name-cn">发动机风扇</div>
+        <div class="part-desc">Cooling fan, belt-driven. 7-blade rigid type.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Flywheel</div>
+        <div class="part-name-cn">飞轮</div>
+        <div class="part-desc">Engine flywheel with ring gear. Drives starter engagement.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Oil Cooler</div>
+        <div class="part-name-cn">机油冷却器</div>
+        <div class="part-desc">Engine oil heat exchanger. Plate-type, water-cooled.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="engine">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="24" height="20" rx="2"/><path d="M12 20H8v8h4M36 20h4v8h-4M18 14v-4M30 14v-4M18 34v4M30 34v4"/><circle cx="24" cy="24" r="4"/><line x1="20" y1="24" x2="28" y2="24"/></svg></div>
+        <div class="part-name-en">Intercooler</div>
+        <div class="part-name-cn">中冷器</div>
+        <div class="part-desc">Air-to-air charge cooler. Reduces intake temperature.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Coolant Temperature Sensor</div>
+        <div class="part-name-cn">冷却液温度传感器</div>
+        <div class="part-desc">Engine coolant temp sender. NTC thermistor type.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Oil Pressure Sensor</div>
+        <div class="part-name-cn">机油压力传感器</div>
+        <div class="part-desc">Engine oil pressure switch. Triggers warning light below 0.5 bar.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Engine Speed Sensor</div>
+        <div class="part-name-cn">转速传感器</div>
+        <div class="part-desc">Crankshaft position sensor. Magnetic pickup type.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Solenoid Valve</div>
+        <div class="part-name-cn">电磁阀</div>
+        <div class="part-desc">24V DC solenoid for fuel shutoff and hydraulic control.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Battery Group</div>
+        <div class="part-name-cn">电瓶组</div>
+        <div class="part-desc">2x 12V 100Ah batteries in series. Maintenance-free available.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Instrument Panel</div>
+        <div class="part-name-cn">仪表盘总成</div>
+        <div class="part-desc">Digital gauge cluster: fuel, temp, oil pressure, hours.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Work Light</div>
+        <div class="part-name-cn">工作灯</div>
+        <div class="part-desc">LED work light, 24V. High/low beam combo for night ops.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="electrical">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-6 16h4l-4 12 10-16h-4z"/><circle cx="24" cy="24" r="20" stroke-opacity="0.3"/></svg></div>
+        <div class="part-name-en">Wiring Harness</div>
+        <div class="part-name-cn">线束总成</div>
+        <div class="part-desc">Engine and chassis wiring loom. OEM pinout, weather-sealed.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="brake">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/></svg></div>
+        <div class="part-name-en">Brake Disc</div>
+        <div class="part-name-cn">制动盘</div>
+        <div class="part-desc">Caliper disc brake rotor. 380mm diameter, vented.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="brake">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/></svg></div>
+        <div class="part-name-en">Brake Caliper Assembly</div>
+        <div class="part-name-cn">制动钳总成</div>
+        <div class="part-desc">Hydraulic disc brake caliper. Left/right specific.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="brake">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/></svg></div>
+        <div class="part-name-en">Hand Brake Assembly</div>
+        <div class="part-name-cn">手制动总成</div>
+        <div class="part-desc">Mechanical parking brake. Cable-actuated, rear axle.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="brake">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/></svg></div>
+        <div class="part-name-en">Brake Master Cylinder</div>
+        <div class="part-name-cn">制动主缸</div>
+        <div class="part-desc">Foot brake hydraulic master cylinder. Dual-circuit.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="brake">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/></svg></div>
+        <div class="part-name-en">Air Booster Pump</div>
+        <div class="part-name-cn">空气加力泵</div>
+        <div class="part-desc">Air-over-hydraulic brake booster. For heavy braking.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Gearbox Assembly</div>
+        <div class="part-name-cn">变速箱总成</div>
+        <div class="part-desc">4-speed power shift transmission. Torque converter input.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Torque Converter</div>
+        <div class="part-name-cn">变矩器</div>
+        <div class="part-desc">Single-stage, 3-phase torque converter. 2.8:1 stall ratio.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Drive Axle Assembly</div>
+        <div class="part-name-cn">驱动桥总成</div>
+        <div class="part-desc">Front or rear drive axle. Axle rating: 6 ton.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Differential Assembly</div>
+        <div class="part-name-cn">差速器总成</div>
+        <div class="part-desc">Bevel gear differential with 4 planet gears.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Final Drive</div>
+        <div class="part-name-cn">主减速器总成</div>
+        <div class="part-desc">Spiral bevel gear reduction. Ratio: 6.5:1.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Wheel-End Reducer</div>
+        <div class="part-name-cn">轮边减速器</div>
+        <div class="part-desc">Planetary gear hub reduction. Ratio: 4.2:1.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Axle Housing</div>
+        <div class="part-name-cn">桥壳</div>
+        <div class="part-desc">Cast steel axle housing. Integral center section.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="transmission">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l3 3 4-1 1 4 4 1-1 4 3 3-3 3 1 4-4 1-1 4-4-1-3 3-3-3-4 1-1-4-4-1 1-4-3-3 3-3-1-4 4-1 1-4 4 1z"/><circle cx="24" cy="24" r="6"/></svg></div>
+        <div class="part-name-en">Rim</div>
+        <div class="part-name-cn">轮辋</div>
+        <div class="part-desc">Front 14-17.5 / Rear 19.5L-24. Multi-piece bolt-together.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Loader Bucket</div>
+        <div class="part-name-cn">装载铲斗</div>
+        <div class="part-desc">General purpose 0.3-1.0m&sup3; bucket. Bolt-on cutting edge.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Bucket Teeth</div>
+        <div class="part-name-cn">斗齿</div>
+        <div class="part-desc">Penetration teeth for loader bucket. Bolt-on type.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">Worn teeth = 20% more fuel. Check weekly in rocky ground.</div>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Side Cutting Edge</div>
+        <div class="part-name-cn">侧切削刃</div>
+        <div class="part-desc">Replaceable side cutter bars. Hardened steel.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Loader Boom</div>
+        <div class="part-name-cn">装载动臂</div>
+        <div class="part-desc">Box-section welded boom. High-tensile steel.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Backhoe Boom</div>
+        <div class="part-name-cn">挖掘大臂</div>
+        <div class="part-desc">Welded boom with internal reinforcement plates.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Dipper Arm</div>
+        <div class="part-name-cn">斗杆</div>
+        <div class="part-desc">Backhoe dipper stick. Hardened bushing bores.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Backhoe Bucket</div>
+        <div class="part-name-cn">挖掘挖斗</div>
+        <div class="part-desc">Narrow trenching or wide ditching bucket options.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="structural">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36L24 8l18 28z"/><line x1="6" y1="36" x2="42" y2="36"/><line x1="14" y1="22" x2="34" y2="22"/><line x1="19" y1="14" x2="29" y2="14"/></svg></div>
+        <div class="part-name-en">Slewing Frame</div>
+        <div class="part-name-cn">回转架</div>
+        <div class="part-desc">Backhoe swing frame. Cast steel, grease-lubricated.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hardware">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="8" x2="24" y2="40" stroke-opacity="0.2"/><line x1="8" y1="24" x2="40" y2="24" stroke-opacity="0.2"/></svg></div>
+        <div class="part-name-en">Pin Shaft Set</div>
+        <div class="part-name-cn">销轴组</div>
+        <div class="part-desc">Hardened chrome pins for boom and bucket joints.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hardware">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="8" x2="24" y2="40" stroke-opacity="0.2"/><line x1="8" y1="24" x2="40" y2="24" stroke-opacity="0.2"/></svg></div>
+        <div class="part-name-en">Bushings</div>
+        <div class="part-name-cn">衬套</div>
+        <div class="part-desc">Bimetallic bushings for pivot points. Grease grooved.</div>
+        <span class="part-badge">All BL Models</span>
+        <div class="vivian-tip">Grease every 10 hours. Dry pins = expensive rebuild.</div>
+      </div>
+      <div class="part-card" data-cat="hardware">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="8" x2="24" y2="40" stroke-opacity="0.2"/><line x1="8" y1="24" x2="40" y2="24" stroke-opacity="0.2"/></svg></div>
+        <div class="part-name-en">Bearing Set</div>
+        <div class="part-name-cn">轴承组</div>
+        <div class="part-desc">Tapered roller and ball bearings for transmission/axle.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hardware">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="8" x2="24" y2="40" stroke-opacity="0.2"/><line x1="8" y1="24" x2="40" y2="24" stroke-opacity="0.2"/></svg></div>
+        <div class="part-name-en">Oil Seal</div>
+        <div class="part-name-cn">油封</div>
+        <div class="part-desc">Rotary shaft seals for axles, transmission, engine.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+      <div class="part-card" data-cat="hardware">
+        <div class="part-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="4"/><line x1="24" y1="8" x2="24" y2="40" stroke-opacity="0.2"/><line x1="8" y1="24" x2="40" y2="24" stroke-opacity="0.2"/></svg></div>
+        <div class="part-name-en">O-Ring Kit</div>
+        <div class="part-name-cn">O型圈 kit</div>
+        <div class="part-desc">Assorted hydraulic O-rings. NBR 70 Shore. 200 pcs.</div>
+        <span class="part-badge">All BL Models</span>
+      </div>
+    </div>
+
+    <div class="parts-bottom-cta">
+      <h3>Don't See the Part You Need?</h3>
+      <p>There are 1,500+ parts in the full catalog. If you need something specific &mdash; a gasket, a gear, a relay &mdash; just ask. I'll find it in the factory warehouse and quote you within 24 hours.</p>
+      <a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%20need%20a%20spare%20part%20for%20my%20backhoe%20loader" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:#fff;padding:14px 30px;border-radius:6px;text-decoration:none;font-weight:700;font-size:14px;transition:transform 0.2s;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Ask Vivian for Any Part
+      </a>
+    </div>
+
   </div>
 </section>
+
+<script>
+  document.querySelectorAll('.parts-filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var cat = this.dataset.cat;
+      document.querySelectorAll('.parts-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      document.querySelectorAll('.part-card').forEach(function(card) {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 
 <!-- CTA Section -->
 <section class="cta-section">
