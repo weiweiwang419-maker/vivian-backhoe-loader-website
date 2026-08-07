@@ -243,6 +243,56 @@
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   }
+  /* Pinned / Featured Article */
+  .blog-card--pinned {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    border: 2px solid var(--primary);
+    position: relative;
+  }
+  .blog-card--pinned::before {
+    content: "ULTIMATE GUIDE";
+    position: absolute;
+    top: 20px;
+    left: -2px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 18px 6px 20px;
+    z-index: 2;
+    border-radius: 0 6px 6px 0;
+  }
+  .blog-card--pinned img {
+    width: 45%;
+    height: 320px;
+    flex-shrink: 0;
+  }
+  .blog-card--pinned .blog-card-content {
+    padding: 40px;
+    justify-content: center;
+  }
+  .blog-card--pinned h2 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+  .blog-card--pinned p {
+    font-size: 15px;
+  }
+  @media (max-width: 768px) {
+    .blog-card--pinned {
+      flex-direction: column;
+    }
+    .blog-card--pinned img {
+      width: 100%;
+      height: 200px;
+    }
+    .blog-card--pinned .blog-card-content {
+      padding: 28px;
+    }
+    .blog-card--pinned h2 { font-size: 19px; }
+  }
   .blog-card img {
     width: 100%;
     height: 240px;
@@ -453,6 +503,21 @@
 <!-- Blog Grid -->
 <section class="blog-main">
   <div class="blog-grid">
+
+    <!-- ⭐ PINNED: Ultimate Guide -->
+    <a href="blog-ultimate-guide-backhoe-loader.html" class="blog-card blog-card--pinned">
+      <img src="images/gallery/workshop/workshop-1.jpg" alt="The Ultimate Guide to Backhoe Loaders by VIVIAN" loading="eager">
+      <div class="blog-card-content">
+        <div class="blog-category">Pillar Guide</div>
+        <h2>The Ultimate Guide to Backhoe Loaders — Everything You Need to Know</h2>
+        <p>A 12,000-word definitive reference covering every aspect: how they work, history, brands, specs, pricing, attachments, maintenance, importing from China, regional applications, and more. Whether you're buying your first machine or your tenth, start here.</p>
+        <div class="blog-meta">
+          <span>August 6, 2026</span>
+          <span class="read-time">45 min read</span>
+        </div>
+        <span class="blog-read-more">Read the definitive guide →</span>
+      </div>
+    </a>
 
     <!-- Article 17: Inspection Checklist -->
     <a href="blog-backhoe-loader-inspection-checklist.html" class="blog-card">
