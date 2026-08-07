@@ -250,7 +250,8 @@
     flex-direction: row;
     border: 2px solid var(--primary);
     position: relative;
-    min-height: 320px;
+    height: 320px;
+    overflow: hidden;
   }
   .blog-card--pinned::before {
     content: "ULTIMATE GUIDE";
@@ -275,6 +276,7 @@
   .blog-card--pinned .blog-card-content {
     padding: 40px;
     justify-content: center;
+    overflow-y: auto;
   }
   .blog-card--pinned h2 {
     font-size: 22px;
