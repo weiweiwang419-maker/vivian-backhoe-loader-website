@@ -249,6 +249,7 @@
     display: flex;
     flex-direction: row;
     border: 2px solid var(--primary);
+    box-sizing: border-box;
     position: relative;
     height: 320px;
     overflow: hidden;
@@ -268,10 +269,13 @@
     border-radius: 0 6px 6px 0;
   }
   .blog-card--pinned img {
-    width: 45%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     flex-shrink: 0;
+    background: none;
+    display: block;
   }
   .blog-card--pinned .blog-card-content {
     padding: 40px;
