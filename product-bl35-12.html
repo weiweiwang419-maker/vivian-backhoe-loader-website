@@ -183,7 +183,7 @@
   .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
   .related-card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.2s; } .related-card:hover { transform: translateY(-4px); } .related-card img { width: 100%; height: 160px; object-fit: cover; } .related-card h3 { padding: 16px; font-size: 16px; }
   footer { background: #1A1A1A; color: rgba(255,255,255,0.7); padding: 60px 40px 30px; }
-  .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+  .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
   .footer-brand h4 { color: #fff; font-size: 20px; margin-bottom: 12px; } .footer-brand p { font-size: 14px; line-height: 1.7; max-width: 400px; }
   footer h5 { color: #fff; font-size: 14px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; } footer ul { list-style: none; } footer li { margin-bottom: 8px; font-size: 14px; } footer a { color: rgba(255,255,255,0.7); text-decoration: none; } footer a:hover { color: var(--accent); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; font-size: 13px; }
@@ -415,9 +415,6 @@
         <li><a href="products.html" class="active">Products</a></li>
         <li><a href="attachments.html">Attachments</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="floor.html">From the Floor</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
       </ul>
@@ -431,9 +428,6 @@
     <a href="products.html" class="active">Products</a>
     <a href="attachments.html">Attachments</a>
     <a href="blog.html">Blog</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="faq.html">FAQ</a>
-    <a href="floor.html">From the Floor</a>
     <a href="about.html">About</a>
     <a href="quote.html" class="nav-cta-mobile">Get Quote</a>
   </div>
@@ -475,8 +469,6 @@
       <img src="images/products/bl35-12-5.jpg" alt="BL 35-12 - Rear View" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" loading="lazy">
     </div>
     <p style="text-align: center; font-size: 13px; color: var(--text-light); margin-top: 24px; font-style: italic;">📸 Photos taken at the factory, March 2026</p>
-  </div>
-</section>
   </div>
 </section>
 
@@ -622,17 +614,27 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="footer-logo-row"><img src="logo.svg" class="footer-logo" alt="V Logo" loading="eager"><h4 style="margin:0;">VIVIAN <span style="color: var(--accent);">—</span> Backhoe Loader</h4></div>
       <p>Your trusted backhoe loader consultant in China.</p>
     </div>
+<div>
+      <h5>Machines</h5>
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="attachments.html">Attachments &amp; Parts</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+      </ul>
+    </div>
     <div>
-      <h5>Quick links</h5>
-      <ul><li><a href="products.html">Products</a></li>
-        <li><a href="attachments.html">Attachments</a></li>
+      <h5>Learn</h5>
+      <ul>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="faq.html">FAQ</a></li>
-      <li><a href="index.html#floor">From the Floor</a></li></ul>
+        <li><a href="floor.html">From the Floor</a></li>
+        <li><a href="about.html">About Vivian</a></li>
+      </ul>
     </div>
     <div>
       <h5>Contact</h5>
-      <ul><li><a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%27m%20interested%20in%20the%20BL%2035-12%20Backhoe%20Loader.%20Could%20you%20send%20me%20the%20price%20and%20specifications%3F">WhatsApp</a></li><li><a href="mailto:vivian.aolite@gmail.com">Email</a></li></ul>
+      <ul>
+        <li><a href="gallery.html">Factory Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li><li><a href="https://wa.me/8618911415465?text=Hi%20Vivian%2C%20I%27m%20interested%20in%20the%20BL%2035-12%20Backhoe%20Loader.%20Could%20you%20send%20me%20the%20price%20and%20specifications%3F">WhatsApp</a></li><li><a href="mailto:vivian.aolite@gmail.com">Email</a></li></ul>
       <div class="social-row">
         <span class="social-label">Follow me:</span>
         <a href="https://www.youtube.com/@Vivian.Loader-90" target="_blank" rel="noopener" aria-label="YouTube">
