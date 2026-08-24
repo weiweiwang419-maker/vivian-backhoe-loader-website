@@ -246,12 +246,11 @@
   /* Pinned / Featured Article */
   .blog-card--pinned {
     grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
+    display: block;
     border: 2px solid var(--primary);
     box-sizing: border-box;
     position: relative;
-    height: 320px;
+    height: 360px;
     overflow: hidden;
   }
   .blog-card--pinned::before {
@@ -269,18 +268,29 @@
     border-radius: 0 6px 6px 0;
   }
   .blog-card--pinned img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 50%;
     height: 100%;
+    min-height: 360px;
     object-fit: cover;
-    object-position: left center;
+    object-position: center center;
     flex-shrink: 0;
     background: none;
     display: block;
   }
   .blog-card--pinned .blog-card-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
     padding: 40px;
     justify-content: center;
     overflow-y: auto;
+    box-sizing: border-box;
+    background: #fff;
   }
   .blog-card--pinned h2 {
     font-size: 22px;
@@ -291,13 +301,18 @@
   }
   @media (max-width: 768px) {
     .blog-card--pinned {
-      flex-direction: column;
+      height: auto;
     }
     .blog-card--pinned img {
+      position: relative;
       width: 100%;
-      height: 200px;
+      height: 240px;
+      min-height: 0;
     }
     .blog-card--pinned .blog-card-content {
+      position: relative;
+      width: 100%;
+      height: auto;
       padding: 28px;
     }
     .blog-card--pinned h2 { font-size: 19px; }
