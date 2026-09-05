@@ -539,6 +539,13 @@
     gap: 60px;
     margin-bottom: 40px;
   }
+  /* Tablet / small laptop: keep layout comfortable before mobile breakpoint */
+  @media (max-width: 1024px) {
+    .nav-links { gap: 18px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+
+
   .footer-brand h4 {
     color: #fff;
     font-size: 20px;

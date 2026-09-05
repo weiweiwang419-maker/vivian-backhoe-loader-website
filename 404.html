@@ -277,6 +277,13 @@
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 60px;
   }
+  /* Tablet / small laptop: keep layout comfortable before mobile breakpoint */
+  @media (max-width: 1024px) {
+    .nav-links { gap: 18px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+
+
   .footer-brand p {
     font-size: 14px;
     line-height: 1.7;

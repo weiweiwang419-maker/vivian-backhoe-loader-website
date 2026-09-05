@@ -639,6 +639,12 @@
   }
 
   /* Responsive */
+  /* Tablet / small laptop: keep layout comfortable before mobile breakpoint */
+  @media (max-width: 1024px) {
+    .nav-links { gap: 18px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+  }
   @media (max-width: 768px) {
     /* nav-links hidden on mobile - handled by hamburger menu CSS above */
     .hero { padding: 0 24px; }

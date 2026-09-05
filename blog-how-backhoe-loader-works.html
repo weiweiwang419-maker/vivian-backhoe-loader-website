@@ -209,6 +209,13 @@
   .related-card p { font-size: 14px; color: var(--text-light); margin: 0 20px 20px; line-height: 1.5; }
   footer { background: #0A4A3A; color: #CFE4DC; padding: 60px 40px 30px; margin-top: 80px; }
   .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 40px; }
+  /* Tablet / small laptop: keep layout comfortable before mobile breakpoint */
+  @media (max-width: 1024px) {
+    .nav-links { gap: 18px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+
+
   .footer-logo-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
   .footer-logo { width: 32px; height: 32px; }
   .footer-brand h4 { color: #fff; font-size: 16px; }
