@@ -498,6 +498,144 @@
   .breadcrumb { margin-top: 80px; padding: 20px 40px; font-size: 13px; color: var(--text-light); max-width: 1280px; margin-left: auto; margin-right: auto; }
   .breadcrumb a { color: var(--primary); text-decoration: none; }
   .breadcrumb a:hover { text-decoration: underline; }
+
+  /* ===== Service Commitment Section ===== */
+  .sc-section {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 100px 40px;
+  }
+  .sc-section-head { text-align: center; margin-bottom: 48px; }
+  .sc-title { font-size: clamp(32px, 4vw, 44px); font-weight: 700; line-height: 1.2; margin-bottom: 14px; letter-spacing: -0.5px; }
+  .sc-title em { font-style: normal; color: var(--primary); }
+  .sc-intro { color: var(--text-light); font-size: 16px; max-width: 640px; margin: 0 auto; line-height: 1.7; }
+  .sc-phase-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .sc-phase {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .sc-phase .num {
+    display: inline-block;
+    width: 26px; height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .sc-phase .label { font-weight: 700; font-size: 15px; vertical-align: middle; }
+  .sc-phase .sub { display: block; font-size: 12px; opacity: 0.8; margin-top: 4px; }
+  .sc-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(15,110,86,0.06);
+    padding: 36px 32px;
+    margin-bottom: 28px;
+    transition: box-shadow 0.3s;
+  }
+  .sc-card:hover { box-shadow: 0 4px 16px rgba(15,110,86,0.08); }
+  .sc-card-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+  .sc-icon {
+    flex-shrink: 0;
+    width: 48px; height: 48px;
+    border-radius: 8px;
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sc-icon svg { width: 26px; height: 26px; stroke: var(--primary); }
+  .sc-card-title h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.3px; }
+  .sc-card-title .sc-tag {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .sc-list { list-style: none; display: grid; gap: 14px; }
+  .sc-list li {
+    display: flex;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .sc-list li strong { color: var(--primary-dark); }
+  .sc-check {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background: rgba(15,110,86,0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sc-check svg { width: 11px; height: 11px; stroke: var(--primary); }
+  .sc-word {
+    background: var(--primary-dark);
+    color: var(--cream);
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: 0 6px 24px rgba(15,110,86,0.12);
+    margin-top: 44px;
+    position: relative;
+  }
+  .sc-word .quote-mark {
+    font-size: 64px;
+    line-height: 1;
+    color: var(--accent);
+    font-family: Georgia, serif;
+    position: absolute;
+    top: 18px; left: 24px;
+    opacity: 0.6;
+  }
+  .sc-word p {
+    font-size: 17px;
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .sc-word .signature {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .sc-word .sig-ava {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: #fff; font-size: 16px;
+  }
+  .sc-word .sig-name { font-weight: 700; font-size: 15px; }
+  .sc-word .sig-role { font-size: 12.5px; opacity: 0.75; }
+  @media (max-width: 768px) {
+    .sc-section { padding: 64px 20px; }
+    .sc-phase-strip { grid-template-columns: 1fr; gap: 10px; }
+    .sc-card { padding: 28px 20px; }
+    .sc-word { padding: 28px 22px; }
+    .sc-word .quote-mark { display: none; }
+  }
 </style>
 
   <!-- Structured Data: SEO -->
@@ -621,6 +759,96 @@
       <p>The stuff I post on "From the Floor" — that's not marketing. That's just what I saw that day. The good, the bad, the "are you kidding me" moments.</p>
       <p>This is a real job. And I'm a real person doing it.</p>
       <p class="signature">— Vivian</p>
+    </div>
+  </div>
+</section>
+
+<!-- Service Commitment -->
+<section class="sc-section" id="my-commitment">
+  <div class="sc-section-head">
+    <div class="page-eyebrow" style="text-align:center;">What you can count on</div>
+    <h2 class="sc-title">My commitment to you — <em>in three stages</em></h2>
+    <p class="sc-intro">Most supplier pages say "full service, lifetime support" and mean nothing. I'd rather tell you exactly what I do — before you pay, before your machine ships, and long after it lands. No fine print.</p>
+  </div>
+
+  <div class="sc-phase-strip">
+    <div class="sc-phase">
+      <span class="num">1</span><span class="label">Before You Order</span>
+      <span class="sub">Honest advice, zero pressure</span>
+    </div>
+    <div class="sc-phase">
+      <span class="num">2</span><span class="label">Before It Ships</span>
+      <span class="sub">Checked by my own eyes</span>
+    </div>
+    <div class="sc-phase">
+      <span class="num">3</span><span class="label">After It Lands</span>
+      <span class="sub">I don't disappear</span>
+    </div>
+  </div>
+
+  <div class="sc-card">
+    <div class="sc-card-head">
+      <div class="sc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </div>
+      <div class="sc-card-title">
+        <h3>Stage 1 — Before You Order</h3>
+        <span class="sc-tag">Free · No strings attached</span>
+      </div>
+    </div>
+    <ul class="sc-list">
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Honest match, not upsell.</strong> If a smaller or cheaper model fits your jobs better, I'll say so — even if it means a smaller order for me.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Video walkthroughs from the workshop floor.</strong> Want to see the actual machine, the welds, the cab? I'll film it on my phone and send it — not a polished promo clip.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Transparent quotation.</strong> Machine price, attachment price, freight estimate — itemized, so you know exactly what you're paying for.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Factory visits welcome, anytime.</strong> Fly in and walk the floor with me. Seeing is faster than ten video calls.</span></li>
+    </ul>
+  </div>
+
+  <div class="sc-card">
+    <div class="sc-card-head">
+      <div class="sc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+      </div>
+      <div class="sc-card-title">
+        <h3>Stage 2 — Before It Ships</h3>
+        <span class="sc-tag">Every machine, every time</span>
+      </div>
+    </div>
+    <ul class="sc-list">
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Full pre-delivery inspection — by me.</strong> Hydraulics, electrical, loader arm, backhoe cycle, every function tested. I'm in the workshop daily; this isn't delegated.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Inspection video for your approval before loading.</strong> You see your exact machine running. Nothing leaves the factory until you've approved it.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Basic spare parts kit included.</strong> Filters and wear items packed with the machine, so your first season doesn't depend on a courier.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Container loading photos.</strong> Rust-proofing, bracing, and photographic proof of how your machine was secured before the doors closed.</span></li>
+    </ul>
+  </div>
+
+  <div class="sc-card">
+    <div class="sc-card-head">
+      <div class="sc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="sc-card-title">
+        <h3>Stage 3 — After It Lands</h3>
+        <span class="sc-tag">Long after the invoice is paid</span>
+      </div>
+    </div>
+    <ul class="sc-list">
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>12-month warranty / 1,500–2,000 working hours</strong> (whichever comes first, confirmed per model in your quotation).</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Spare parts that actually ship.</strong> Common parts held in stock; anything else, send me a photo or part number on WhatsApp and I'll arrange it.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Technical support by WhatsApp, in plain language.</strong> Operating questions, hydraulic issues, maintenance intervals — message me directly, not a ticket queue.</span></li>
+      <li><span class="sc-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>Operation training materials</strong> so new operators start right — fewer dumb breakdowns than learning by trial and error.</span></li>
+    </ul>
+  </div>
+
+  <div class="sc-word">
+    <span class="quote-mark">&ldquo;</span>
+    <p>Anyone can promise "lifetime support" — the words cost nothing. What I promise is smaller and real: you will deal with me, the same person, from your first message to your third year of ownership. If something goes wrong, you'll have a name and a face, not a ticket number. That's the whole business model.</p>
+    <div class="signature">
+      <div class="sig-ava">V</div>
+      <div>
+        <div class="sig-name">Vivian</div>
+        <div class="sig-role">Backhoe Loader Specialist · In the workshop daily</div>
+      </div>
     </div>
   </div>
 </section>
