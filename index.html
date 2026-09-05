@@ -46,7 +46,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text);
     line-height: 1.6;
     background: #FAF9F6;
@@ -121,7 +121,7 @@
     background: #ffffff;
     margin: 5px 0;
     transition: 0.3s;
-    border-radius: 2px;
+    border-radius: 4px;
   }
   .nav-hamburger.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -352,7 +352,7 @@
   }
   .product-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 24px rgba(15,110,86,0.12);
   }
   .product-card img {
     width: 100%;
@@ -447,14 +447,14 @@
     height: 480px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
   }
   .floor-image-mosaic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
   }
   .floor-image-mosaic img:hover {
     transform: scale(1.03);
@@ -482,7 +482,7 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
     padding: 6px 14px;
-    border-radius: 3px;
+    border-radius: 4px;
     width: fit-content;
     z-index: 10;
   }
@@ -740,7 +740,7 @@
   .compare-table-wrap {
     overflow-x: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 12px rgba(15,110,86,0.06);
   }
   .compare-table {
     width: 100%;
@@ -802,7 +802,7 @@
   }
   .ship-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 24px rgba(15,110,86,0.12);
   }
   .ship-emoji {
     font-size: 40px;
@@ -847,7 +847,7 @@
     transition: all 0.3s;
   }
   .faq-preview-item:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 24px rgba(15,110,86,0.12);
     border-color: var(--primary);
   }
   .faq-preview-item .fp-q {
@@ -951,7 +951,7 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: all 0.2s;
   }
   .cta-box-btn.whatsapp {

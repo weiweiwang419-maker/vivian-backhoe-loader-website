@@ -36,7 +36,7 @@
 <style>
   :root { --primary: #0F6E56; --primary-dark: #094739; --accent: #EF9F27; --cream: #F5F1E8; --text: #1A1A1A; --text-light: #5C5C5C; --border: #E5E0D5; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text); line-height: 1.6;
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: var(--text); line-height: 1.6;
     background: #FAF9F6;}
   /* Navigation - Dark Premium */
   nav {
@@ -108,7 +108,7 @@
     background: #ffffff;
     margin: 5px 0;
     transition: 0.3s;
-    border-radius: 2px;
+    border-radius: 4px;
   }
   .nav-hamburger.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -169,7 +169,7 @@
   .product-gallery img { width: 100%; border-radius: 8px; margin-bottom: 12px; }
   .product-title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
   .product-subtitle { font-size: 16px; color: var(--text-light); margin-bottom: 32px; }
-  .product-price-note { font-size: 14px; color: var(--text-light); margin-bottom: 32px; padding: 16px; background: var(--cream); border-radius: 6px; }
+  .product-price-note { font-size: 14px; color: var(--text-light); margin-bottom: 32px; padding: 16px; background: var(--cream); border-radius: 8px; }
   .product-cta { display: flex; gap: 16px; flex-wrap: wrap; }
   .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--primary-dark); padding: 18px 32px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 16px; transition: transform 0.2s; }
   .btn-primary:hover { transform: translateY(-2px); }
@@ -290,7 +290,7 @@
   .video-inner { max-width: 960px; margin: 0 auto; }
   .video-title { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: var(--primary-dark); }
   .video-sub { font-size: 15px; color: var(--text-light); margin-bottom: 32px; }
-  .video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(15,110,86,0.15); }
+  .video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(15,110,86,0.12); }
   .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
   .video-channel { text-align: center; margin-top: 20px; }
   .video-channel a { color: var(--primary); font-size: 14px; text-decoration: none; font-weight: 600; }
