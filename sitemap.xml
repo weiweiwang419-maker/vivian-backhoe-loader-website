@@ -112,6 +112,9 @@
   </url>
   <url>
     <loc>https://www.backhoemach.com/blog-backhoe-loader-rent-vs-buy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.backhoemach.com/blog-backhoe-loader-payment-guide.html</loc>
     <changefreq>monthly</changefreq>
@@ -124,15 +127,18 @@
   </url>
   <url>
     <loc>https://www.backhoemach.com/blog-backhoe-loader-storage.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.backhoemach.com/blog-backhoe-loader-spare-parts-math.html</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.backhoemach.com/blog-mini-backhoe-loader-farm.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
