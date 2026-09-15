@@ -1,0 +1,230 @@
+{
+  "last_updated": "2026-09-15",
+  "schema_version": "1.0",
+  "groups": [
+    {
+      "key": "engine_power",
+      "label": "Engine & Power",
+      "icon": "engine",
+      "rows": [
+        {"key": "power_system", "label": "Power System"},
+        {"key": "rated_power", "label": "Rated Power"},
+        {"key": "max_speed", "label": "Max Travel Speed"}
+      ]
+    },
+    {
+      "key": "operating",
+      "label": "Operating",
+      "icon": "weight",
+      "rows": [
+        {"key": "operating_weight", "label": "Operating Weight"}
+      ]
+    },
+    {
+      "key": "performance",
+      "label": "Performance",
+      "icon": "depth",
+      "rows": [
+        {"key": "max_dig_depth", "label": "Max Dig Depth"},
+        {"key": "max_dump_height", "label": "Max Dump Height"}
+      ]
+    },
+    {
+      "key": "bucket",
+      "label": "Bucket Capacity",
+      "icon": "bucket",
+      "rows": [
+        {"key": "loader_bucket", "label": "Loader Bucket"},
+        {"key": "backhoe_bucket", "label": "Backhoe Bucket"}
+      ]
+    },
+    {
+      "key": "drivetrain",
+      "label": "Drivetrain & Dimensions",
+      "icon": "wheels",
+      "rows": [
+        {"key": "transmission", "label": "Transmission"},
+        {"key": "tires", "label": "Tires"},
+        {"key": "overall_dimensions", "label": "Overall Dimensions (L x W x H)"}
+      ]
+    },
+    {
+      "key": "warranty",
+      "label": "Warranty",
+      "icon": "shield",
+      "rows": [
+        {"key": "warranty", "label": "Warranty"}
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "bl15-06",
+      "name": "BL 15-06 Mini",
+      "tagline": "Electric Mini \u2014 for indoor, farms & urban sites",
+      "url": "product-bl15-06.html",
+      "image": "images/products/bl15-06-front.jpg",
+      "specs": {
+        "power_system": "72V / 120V Battery (Electric)",
+        "rated_power": "Electric Motor",
+        "max_speed": "12 km/h",
+        "operating_weight": "1,500 kg",
+        "max_dig_depth": "1,580 mm",
+        "max_dump_height": "\u2014",
+        "loader_bucket": "0.15 m\u00b3",
+        "backhoe_bucket": "\u2014",
+        "transmission": "Electric Drive",
+        "tires": "\u2014",
+        "overall_dimensions": "\u2014",
+        "warranty": "12 months / 1,000 hours"
+      }
+    },
+    {
+      "id": "bl20-07",
+      "name": "BL 20-07 Mini",
+      "tagline": "Diesel Mini \u2014 CVT stepless, tight-job friendly",
+      "url": "product-bl20-07.html",
+      "image": "images/products/bl20-07-front.jpg",
+      "specs": {
+        "power_system": "Changchai 390 Diesel",
+        "rated_power": "25 kW / 2,400 rpm",
+        "max_speed": "18 km/h (high) / 6 km/h (low)",
+        "operating_weight": "2,350 kg",
+        "max_dig_depth": "1,850 mm",
+        "max_dump_height": "2,000 mm",
+        "loader_bucket": "0.4 m\u00b3",
+        "backhoe_bucket": "0.07 m\u00b3",
+        "transmission": "Stepless (CVT)",
+        "tires": "650-16 / 29x12.5-15",
+        "overall_dimensions": "4,700 x 1,180 (1,450) x 2,400 mm",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl35-12",
+      "name": "BL 35-12",
+      "tagline": "Compact workhorse for small farms and landscaping",
+      "url": "product-bl35-12.html",
+      "image": "images/products/bl35-12-front.jpg",
+      "specs": {
+        "power_system": "Xinchai Diesel",
+        "rated_power": "37 kW",
+        "max_speed": "25 km/h",
+        "operating_weight": "3,500 kg",
+        "max_dig_depth": "2,800 mm",
+        "max_dump_height": "\u2014",
+        "loader_bucket": "0.4 m\u00b3",
+        "backhoe_bucket": "\u2014",
+        "transmission": "\u2014",
+        "tires": "\u2014",
+        "overall_dimensions": "\u2014",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl45-18",
+      "name": "BL 45-18",
+      "tagline": "Mid-compact \u2014 bridges farms and light construction",
+      "url": "product-bl45-18.html",
+      "image": "images/products/bl45-18-front.jpg",
+      "specs": {
+        "power_system": "Xinchai 498 Diesel",
+        "rated_power": "48 kW",
+        "max_speed": "30 km/h",
+        "operating_weight": "4,500 kg",
+        "max_dig_depth": "3,000 mm",
+        "max_dump_height": "\u2014",
+        "loader_bucket": "0.5 m\u00b3",
+        "backhoe_bucket": "\u2014",
+        "transmission": "\u2014",
+        "tires": "\u2014",
+        "overall_dimensions": "\u2014",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl70-25",
+      "name": "BL 70-25",
+      "tagline": "Contractor-grade \u2014 the most-shipped model in our line",
+      "url": "product-bl70-25.html",
+      "image": "images/products/bl70-25-front.jpg",
+      "specs": {
+        "power_system": "Yuchai YC4FA Diesel",
+        "rated_power": "55 kW / 2,400 rpm",
+        "max_speed": "35 km/h",
+        "operating_weight": "6,300 kg",
+        "max_dig_depth": "3,400 mm",
+        "max_dump_height": "2,800 mm",
+        "loader_bucket": "0.6 m\u00b3",
+        "backhoe_bucket": "0.2 m\u00b3",
+        "transmission": "\u2014",
+        "tires": "\u2014",
+        "overall_dimensions": "6,200 x 2,000 x 2,900 mm",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl80-25",
+      "name": "BL 80-25",
+      "tagline": "Heavy contract work \u2014 73 kW, 8-ton class",
+      "url": "product-bl80-25.html",
+      "image": "images/products/bl80-25-front.jpg",
+      "specs": {
+        "power_system": "Weichai WP4.1Z Diesel",
+        "rated_power": "73 kW",
+        "max_speed": "40 km/h",
+        "operating_weight": "8,000 kg",
+        "max_dig_depth": "3,600 mm",
+        "max_dump_height": "2,900 mm",
+        "loader_bucket": "0.8 m\u00b3",
+        "backhoe_bucket": "\u2014",
+        "transmission": "\u2014",
+        "tires": "\u2014",
+        "overall_dimensions": "\u2014",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl90-25",
+      "name": "BL 90-25",
+      "tagline": "Site-prep workhorse \u2014 optional telescopic arm and 6-in-1 bucket",
+      "url": "product-bl90-25.html",
+      "image": "images/products/bl90-25-front.jpg",
+      "specs": {
+        "power_system": "Weichai WP4.1Z Diesel",
+        "rated_power": "73 kW / 2,400 rpm",
+        "max_speed": "40 km/h",
+        "operating_weight": "9,000 kg",
+        "max_dig_depth": "3,800 mm",
+        "max_dump_height": "3,000 mm",
+        "loader_bucket": "0.8 m\u00b3 (1.0 m\u00b3 optional)",
+        "backhoe_bucket": "0.3 m\u00b3",
+        "transmission": "\u2014",
+        "tires": "\u2014",
+        "overall_dimensions": "7,000 x 2,200 x 3,300 mm",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl105-25",
+      "name": "BL 105-25",
+      "tagline": "Top of our line \u2014 10.8-ton class, max digging force 42 kN",
+      "url": "product-bl105-25.html",
+      "image": "images/products/bl105-25-front.jpg",
+      "specs": {
+        "power_system": "Weichai WP4.1Z Diesel",
+        "rated_power": "73 kW / 2,400 rpm",
+        "max_speed": "40 km/h",
+        "operating_weight": "10,870 kg",
+        "max_dig_depth": "4,000 mm",
+        "max_dump_height": "3,200 mm",
+        "loader_bucket": "1.0 m\u00b3",
+        "backhoe_bucket": "0.3 m\u00b3",
+        "transmission": "\u2014",
+        "tires": "12.5-20 (front) / 16.5-24 (rear)",
+        "overall_dimensions": "7,200 x 2,360 x 3,450 mm",
+        "warranty": "12 months / 1,500 hours"
+      }
+    }
+  ]
+}
