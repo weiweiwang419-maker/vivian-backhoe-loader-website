@@ -5,3 +5,8 @@ images/products_backup/
 images/factory_backup/
 images/products/backup_bl70_25_old_2026-07-09/
 .workbuddy/
+
+# local working files
+_sitemap_util.py
+audit_B_*.png
+service-commitment-template.html
