@@ -292,5 +292,12 @@
     "image": "rear-boom-mower.jpg",
     "compat": "Rear boom attachments",
     "name_en": "Rear Boom Mower"
+  },
+  {
+    "name_cn": "侧卸斗",
+    "slug": "side-dump-bucket",
+    "image": "side-dump-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Side Dump Bucket"
   }
 ]
