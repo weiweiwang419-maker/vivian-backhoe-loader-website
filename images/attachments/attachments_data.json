@@ -224,13 +224,6 @@
     "name_en": "Enclosed Sweeper"
   },
   {
-    "name_cn": "割草机",
-    "slug": "mower",
-    "image": "mower.jpg",
-    "compat": "All except BL 604",
-    "name_en": "Mower"
-  },
-  {
     "name_cn": "吹雪机",
     "slug": "snow-blower",
     "image": "snow-blower.jpg",
@@ -243,5 +236,61 @@
     "image": "diesel-snow-sweeper.jpg",
     "compat": "All models",
     "name_en": "Diesel Snow Sweeper"
+  },
+  {
+    "name_cn": "甘蔗斗",
+    "slug": "sugarcane-bucket",
+    "image": "sugarcane-bucket.jpg",
+    "compat": "All models",
+    "name_en": "Sugarcane Bucket"
+  },
+  {
+    "name_cn": "旋转抓头",
+    "slug": "rotating-grab",
+    "image": "rotating-grab.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Rotating Grab"
+  },
+  {
+    "name_cn": "草叉",
+    "slug": "grass-fork",
+    "image": "grass-fork.jpg",
+    "compat": "All models",
+    "name_en": "Grass Fork"
+  },
+  {
+    "name_cn": "上二下二抓木机",
+    "slug": "wood-grabber-2-over-2",
+    "image": "wood-grabber-2-over-2.jpg",
+    "compat": "All models",
+    "name_en": "2-over-2 Wood Grabber"
+  },
+  {
+    "name_cn": "小型吹雪机",
+    "slug": "small-snow-blower",
+    "image": "small-snow-blower.jpg",
+    "compat": "All models",
+    "name_en": "Small Snow Blower"
+  },
+  {
+    "name_cn": "后挖掘端配耙斗 Rake",
+    "slug": "root-rake",
+    "image": "root-rake.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Root Rake"
+  },
+  {
+    "name_cn": "开沟机",
+    "slug": "trencher",
+    "image": "trencher.jpg",
+    "compat": "Needs >=80 L/min flow",
+    "name_en": "Trencher"
+  },
+  {
+    "name_cn": "后挖割草机",
+    "slug": "rear-boom-mower",
+    "image": "rear-boom-mower.jpg",
+    "compat": "Rear boom attachments",
+    "name_en": "Rear Boom Mower"
   }
 ]
