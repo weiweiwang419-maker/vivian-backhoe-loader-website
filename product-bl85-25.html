@@ -197,7 +197,7 @@
   .footer-brand h4 { color: #fff; font-size: 20px; margin-bottom: 12px; } .footer-brand p { font-size: 14px; line-height: 1.7; max-width: 400px; }
   footer h5 { color: #fff; font-size: 14px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; } footer ul { list-style: none; } footer li { margin-bottom: 8px; font-size: 14px; } footer a { color: rgba(255,255,255,0.7); text-decoration: none; } footer a:hover { color: var(--accent); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; font-size: 13px; }
-  @media (max-width: 768px) { /* nav-links hidden on mobile - handled by hamburger menu CSS above */ .product-top { grid-template-columns: 1fr; gap: 40px; } .take-grid { grid-template-columns: 1fr; } .breadcrumb, .product-hero, .specs-section, .vivian-take, .full-specs, .related { padding-left: 24px; padding-right: 24px; } .footer-inner { grid-template-columns: 1fr; gap: 40px; } }
+  @media (max-width: 768px) { /* nav-links hidden on mobile - handled by hamburger menu CSS above */ .product-top { grid-template-columns: 1fr; gap: 40px; } .take-grid { grid-template-columns: 1fr; } .breadcrumb, .product-hero, .video-section, .specs-section, .vivian-take, .full-specs, .related { padding-left: 24px; padding-right: 24px; } .footer-inner { grid-template-columns: 1fr; gap: 40px; } }
 
   /* Logo Icon */
   .logo-icon {
@@ -298,6 +298,17 @@
     .wa-float svg { width: 26px; height: 26px; }
   }
 
+  /* Video Section */
+  .video-section { padding: 80px 40px; background: #F1EFE9; }
+  .video-inner { max-width: 960px; margin: 0 auto; }
+  .video-title { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: var(--primary-dark); }
+  .video-sub { font-size: 15px; color: var(--text-light); margin-bottom: 32px; }
+  .video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(15,110,86,0.12); }
+  .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+  .video-channel { text-align: center; margin-top: 20px; }
+  .video-channel a { color: var(--primary); font-size: 14px; text-decoration: none; font-weight: 600; }
+  .video-channel a:hover { color: var(--accent); }
+  @media (max-width: 768px) { .video-section { padding-left: 24px; padding-right: 24px; } }
 </style>
 
   <!-- Structured Data: SEO -->
@@ -500,6 +511,18 @@
         <p style="font-size: 13px; color: var(--text-light); margin-top: 12px; letter-spacing: 0.5px;">Rear — backhoe arm &amp; stabilizers</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section class="video-section">
+  <div class="video-inner">
+    <h2 class="video-title">See the BL 85-25 in Action</h2>
+    <p class="video-sub">Watch the new BL 85-25 — the half-ton class with the cast slewing support, the folding boarding step, and two units to a 40 ft container.</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/h2Ks1q-oMZk" title="New AOLITE BL85 Backhoe Loader" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="video-channel">Subscribe to <a href="https://www.youtube.com/@Vivian.Loader-90" target="_blank" rel="noopener">Vivian's YouTube Channel</a> for more machine demos</p>
   </div>
 </section>
 
