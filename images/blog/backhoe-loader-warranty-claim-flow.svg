@@ -1,0 +1,36 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simplified flow of a backhoe loader warranty claim in five steps: you report it, factory diagnosis, decision, parts dispatched, machine back at work">
+  <rect x="0" y="0" width="760" height="440" fill="#FDFCF8"/>
+  <text x="380" y="40" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" fill="#1A1A1A">How a claim actually moves</text>
+
+  <rect x="30" y="62" width="700" height="54" rx="10" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+  <text x="56" y="97" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#0F6E56">1</text>
+  <text x="92" y="97" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="600" fill="#1A1A1A">You report it — photos + hours</text>
+
+  <line x1="380" y1="116" x2="380" y2="134" stroke="#E8913A" stroke-width="4"/>
+  <polygon points="380,138 371,130 389,130" fill="#E8913A"/>
+
+  <rect x="30" y="140" width="700" height="54" rx="10" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+  <text x="56" y="175" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#0F6E56">2</text>
+  <text x="92" y="175" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="600" fill="#1A1A1A">Factory diagnosis</text>
+
+  <line x1="380" y1="194" x2="380" y2="212" stroke="#E8913A" stroke-width="4"/>
+  <polygon points="380,216 371,208 389,208" fill="#E8913A"/>
+
+  <rect x="30" y="218" width="700" height="54" rx="10" fill="#FFFFFF" stroke="#C9971B" stroke-width="2.5"/>
+  <text x="56" y="253" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#7A5C00">3</text>
+  <text x="92" y="253" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="600" fill="#1A1A1A">Decision — wear part or defect?</text>
+
+  <line x1="380" y1="272" x2="380" y2="290" stroke="#E8913A" stroke-width="4"/>
+  <polygon points="380,294 371,286 389,286" fill="#E8913A"/>
+
+  <rect x="30" y="296" width="700" height="54" rx="10" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+  <text x="56" y="331" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#0F6E56">4</text>
+  <text x="92" y="331" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="600" fill="#1A1A1A">Warranty part dispatched</text>
+
+  <line x1="380" y1="350" x2="380" y2="368" stroke="#E8913A" stroke-width="4"/>
+  <polygon points="380,372 371,364 389,364" fill="#E8913A"/>
+
+  <rect x="30" y="374" width="700" height="54" rx="10" fill="#0F6E56"/>
+  <text x="56" y="409" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">5</text>
+  <text x="92" y="409" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Installed — machine back at work</text>
+</svg>
