@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15",
+  "last_updated": "2026-10-28",
   "schema_version": "1.0",
   "groups": [
     {
@@ -181,6 +181,27 @@
         "transmission": "\u2014",
         "tires": "\u2014",
         "overall_dimensions": "\u2014",
+        "warranty": "12 months / 1,500 hours"
+      }
+    },
+    {
+      "id": "bl85-25",
+      "name": "BL 85-25",
+      "tagline": "8.5-ton class \u2014 lead counterweight, cast slewing support",
+      "url": "product-bl85-25.html",
+      "image": "images/products/bl85-25-front.jpg",
+      "specs": {
+        "power_system": "Weichai WP4G100E220 Diesel",
+        "rated_power": "73 kW",
+        "max_speed": "40 km/h",
+        "operating_weight": "8,500 kg",
+        "max_dig_depth": "3,800 mm",
+        "max_dump_height": "2,670 mm",
+        "loader_bucket": "1.2 m\u00b3",
+        "backhoe_bucket": "0.3 m\u00b3",
+        "transmission": "YJ290 hydraulic torque converter",
+        "tires": "14\u201317.5 / 19.5L\u201324",
+        "overall_dimensions": "6,470 x 2,300 x 3,000 mm",
         "warranty": "12 months / 1,500 hours"
       }
     },
