@@ -1,0 +1,24 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simplified bar chart: on the AOLITE line, mini means 1.5 to 2.4 tonnes, compact 3.5 to 4.5 tonnes, full-size 6.3 to 10.9 tonnes">
+  <rect width="800" height="480" fill="#F5F1E8"/>
+
+  <text x="400" y="64" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" fill="#1A1A1A">Where "mini" starts — and stops</text>
+
+  <!-- MINI tier -->
+  <text x="90" y="140" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#0F6E56">MINI</text>
+  <rect x="90" y="156" width="90" height="34" rx="5" fill="#0F6E56"/>
+  <rect x="188" y="156" width="130" height="34" rx="5" fill="#0F6E56"/>
+  <text x="340" y="181" font-family="Inter,Arial,sans-serif" font-size="26" fill="#1A1A1A">1.5 – 2.4 t</text>
+  <text x="90" y="228" font-family="Inter,Arial,sans-serif" font-size="22" fill="#4A4A4A">BL 15-06 electric · BL 20-07 diesel</text>
+
+  <!-- COMPACT tier -->
+  <text x="90" y="292" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#E8913A">COMPACT</text>
+  <rect x="90" y="308" width="200" height="34" rx="5" fill="#E8913A"/>
+  <rect x="298" y="308" width="252" height="34" rx="5" fill="#E8913A"/>
+  <text x="570" y="333" font-family="Inter,Arial,sans-serif" font-size="26" fill="#1A1A1A">3.5 – 4.5 t</text>
+
+  <!-- FULL-SIZE tier -->
+  <text x="90" y="396" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#6B6B6B">FULL-SIZE</text>
+  <rect x="90" y="412" width="380" height="34" rx="5" fill="#C9C5BA"/>
+  <rect x="478" y="412" width="182" height="34" rx="5" fill="#C9C5BA"/>
+  <text x="90" y="468" font-family="Inter,Arial,sans-serif" font-size="22" fill="#4A4A4A">6.3 – 10.9 t</text>
+</svg>
