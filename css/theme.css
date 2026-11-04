@@ -1,0 +1,31 @@
+/* ============================================================
+   backhoemach.com — "Ink & Signal" theme layer (P0)
+   方案01：墨蓝 #121A24 主色 + 信号黄 #F6C343 强调（对齐 logo）
+   加载顺序：各页面内联样式之后 → 同优先级规则以本文件为准
+   回滚：删除页面中的 css/theme.css 引用行即可
+   ============================================================ */
+
+/* ---------- 字体 ---------- */
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+h1,h2,h3,h4{font-family:'Inter Tight','Inter',-apple-system,sans-serif;letter-spacing:-.02em}
+
+/* ---------- 导航统一为墨色（含原白底文章页） ---------- */
+nav{background:rgba(18,26,36,.97)!important;border-bottom:1px solid rgba(255,255,255,.06)!important}
+nav .logo{color:#fff!important}
+nav .logo span{color:#F6C343!important}
+.nav-links a{color:rgba(255,255,255,.85)!important}
+.nav-links a:hover,.nav-links a.active{color:#F6C343!important}
+.mobile-menu-btn{color:#fff!important}
+@media(max-width:768px){
+  .nav-links{background:#121A24!important;box-shadow:0 12px 32px rgba(10,15,21,.28)}
+}
+
+/* ---------- 页脚统一墨色 ---------- */
+footer{background:#121A24!important}
+
+/* ---------- 浅色底上的黄色文字 → 深金（保证对比度） ---------- */
+.article-meta .read-time,.article-meta a,.blog-meta .read-time,
+.video-channel a:hover,.sc-card-title .sc-tag,.sc-word .quote-mark,
+.why-number,.ship-card .ship-time,.trust-number,
+.trust-section .section-eyebrow,.page-eyebrow,.article-category,
+.error-code span,.preview-note strong{color:#8A6412!important}

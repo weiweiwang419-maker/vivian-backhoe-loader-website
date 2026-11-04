@@ -12,24 +12,24 @@
   <line x1="400" y1="120" x2="670" y2="188" stroke="#E8913A" stroke-width="4"/>
   <polygon points="670,188 659,177 681,176" fill="#E8913A"/>
 
-  <rect x="10" y="196" width="240" height="250" rx="14" fill="#FFFFFF" stroke="#0F6E56" stroke-width="3"/>
-  <text x="130" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#0F6E56">1 · Emission</text>
+  <rect x="10" y="196" width="240" height="250" rx="14" fill="#FFFFFF" stroke="#121A24" stroke-width="3"/>
+  <text x="130" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">1 · Emission</text>
   <text x="130" y="278" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#333333">What comes out of</text>
   <text x="130" y="304" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#333333">the exhaust.</text>
-  <text x="130" y="358" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#0F6E56">Decides the engine</text>
+  <text x="130" y="358" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#121A24">Decides the engine</text>
   <text x="130" y="388" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#555555">cannot be added later</text>
 
-  <rect x="280" y="196" width="240" height="250" rx="14" fill="#FFFFFF" stroke="#0F6E56" stroke-width="3"/>
-  <text x="400" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#0F6E56">2 · Safety</text>
+  <rect x="280" y="196" width="240" height="250" rx="14" fill="#FFFFFF" stroke="#121A24" stroke-width="3"/>
+  <text x="400" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">2 · Safety</text>
   <text x="400" y="278" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#333333">Guards, cab, noise,</text>
   <text x="400" y="304" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#333333">manuals, labels.</text>
-  <text x="400" y="358" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#0F6E56">Decides market access</text>
+  <text x="400" y="358" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#121A24">Decides market access</text>
   <text x="400" y="388" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#555555">check the issuer number</text>
 
-  <rect x="550" y="196" width="240" height="250" rx="14" fill="#FFFFFF" stroke="#0F6E56" stroke-width="3"/>
-  <text x="670" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#0F6E56">3 · Documents</text>
+  <rect x="550" y="196" width="240" height="250" rx="14" fill="#FFFFFF" stroke="#121A24" stroke-width="3"/>
+  <text x="670" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">3 · Documents</text>
   <text x="670" y="278" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#333333">Papers your port asks</text>
   <text x="670" y="304" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#333333">for at clearance.</text>
-  <text x="670" y="358" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#0F6E56">Decides clearance</text>
+  <text x="670" y="358" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#121A24">Decides clearance</text>
   <text x="670" y="388" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#555555">starts during production</text>
 </svg>

@@ -182,16 +182,16 @@
 </script>
 
 <style>
-  :root { --primary: #0F6E56; --accent: #0F6E56; --bg-dark: #0d1117; --bg-soft: #f7f7f4; --text: #1a1a1a; --text-light: #666; }
+  :root { --primary: #121A24; --accent: #121A24; --bg-dark: #0d1117; --bg-soft: #f7f7f4; --text: #1a1a1a; --text-light: #666; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: var(--text); background: #FAF9F6; line-height: 1.75; }
-  nav { background: #0F6E56; padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: var(--text); background: #F7F6F2; line-height: 1.75; }
+  nav { background: #121A24; padding: 0 24px; position: sticky; top: 0; z-index: 100; }
   .nav-inner { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 64px; }
   .logo { color: #fff; font-weight: 800; font-size: 18px; letter-spacing: 1px; display: flex; align-items: center; gap: 10px; }
   .logo span { color: var(--accent); }
   .logo-icon { height: 32px; width: auto; }
   .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
-  .nav-links a { color: #CFE4DC; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; transition: color 0.2s; }
+  .nav-links a { color: #E3E1D8; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; transition: color 0.2s; }
   .nav-links a:hover { color: #ffffff; }
   .nav-links a.active { color: #ffffff; font-weight: 700; border-bottom: 2px solid var(--accent); padding-bottom: 4px; }
   .nav-cta { background: var(--accent); color: #0d1117 !important; padding: 8px 20px; border-radius: 8px; font-weight: 700 !important; }
@@ -201,7 +201,7 @@
   .nav-mobile-menu { display: none; }
   .breadcrumb { max-width: 1280px; margin: 0 auto; padding: 20px 40px; font-size: 13px; color: #999; }
   .breadcrumb a { color: var(--primary); text-decoration: none; }
-  .article-header { background: #0A4A3A; padding: 60px 40px 80px; }
+  .article-header { background: #10161D; padding: 60px 40px 80px; }
   .article-header-inner { max-width: 800px; margin: 0 auto; }
   .article-category { color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
   .article-title { color: #fff; font-size: 44px; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; }
@@ -217,7 +217,7 @@
   .article-body li { margin-bottom: 10px; }
   .article-body a { color: var(--primary); font-weight: 600; }
   .article-body table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 15px; }
-  .article-body th { background: #0A4A3A; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
+  .article-body th { background: #10161D; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
   .article-body td { padding: 11px 14px; border-bottom: 1px solid #e5e5e0; }
   .article-body tr:nth-child(even) td { background: #fafaf7; }
   .toc { background: var(--bg-soft); border: 1px solid #e8e8e3; border-radius: 8px; padding: 24px 32px; margin: 32px 0; }
@@ -240,7 +240,7 @@
   .related-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
   .related-card h4 { font-size: 17px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
   .related-card p { font-size: 14px; color: var(--text-light); line-height: 1.5; }
-  footer { background: #0A4A3A; padding: 60px 24px 24px; margin-top: 40px; }
+  footer { background: #10161D; padding: 60px 24px 24px; margin-top: 40px; }
   .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; }
   /* Tablet / small laptop: keep layout comfortable before mobile breakpoint */
   @media (max-width: 1024px) {
@@ -252,16 +252,16 @@
   .footer-brand p { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.6); }
   .footer-links h5 { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
   .footer-links a { display: block; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; margin-bottom: 10px; transition: color 0.2s; }
-  .footer-links a:hover { color: #0F6E56; }
+  .footer-links a:hover { color: #121A24; }
   .social-links { display: flex; gap: 12px; margin-top: 12px; }
   .social-links a { display: inline-block; width: 36px; height: 36px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; transition: background 0.2s; }
   .social-links a:hover { background: rgba(255,255,255,0.15); }
   .footer-bottom { max-width: 1280px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.4); }
-  @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr; gap: 40px; } .article-body { padding: 40px 24px; } .article-header { padding: 40px 24px 60px; } .article-title { font-size: 32px; } .breadcrumb { padding: 16px 24px; } .nav-links { display: none; } .nav-hamburger { display: block; } .nav-mobile-menu.open { display: flex; flex-direction: column; background: #0A4A3A; padding: 16px 24px 24px; gap: 14px; } .nav-mobile-menu.open a { color: #fff; text-decoration: none; font-size: 15px; } .nav-mobile-menu.open a.active { color: #ffffff; } .nav-cta-mobile { color: var(--accent) !important; font-weight: 700; } }
+  @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr; gap: 40px; } .article-body { padding: 40px 24px; } .article-header { padding: 40px 24px 60px; } .article-title { font-size: 32px; } .breadcrumb { padding: 16px 24px; } .nav-links { display: none; } .nav-hamburger { display: block; } .nav-mobile-menu.open { display: flex; flex-direction: column; background: #10161D; padding: 16px 24px 24px; gap: 14px; } .nav-mobile-menu.open a { color: #fff; text-decoration: none; font-size: 15px; } .nav-mobile-menu.open a.active { color: #ffffff; } .nav-cta-mobile { color: var(--accent) !important; font-weight: 700; } }
 
     /* ===== Share Bar (一键分享) ===== */
-    .share-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:16px 18px;margin:40px 0 8px;background:#F5F1E8;border:1px solid #E5E0D5;border-radius:12px;font-size:14px}
-    .share-bar .share-label{font-weight:600;color:#0F6E56;margin-right:6px;font-size:13.5px}
+    .share-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:16px 18px;margin:40px 0 8px;background:#F7F6F2;border:1px solid #E2DED4;border-radius:12px;font-size:14px}
+    .share-bar .share-label{font-weight:600;color:#121A24;margin-right:6px;font-size:13.5px}
     .share-bar .s-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid #e5e7eb;border-radius:8px;background:#fff;color:#374151;text-decoration:none;font-size:13px;line-height:1;cursor:pointer;transition:all .18s ease;font-weight:500;font-family:inherit}
     .share-bar .s-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:#d1d5db}
     .share-bar .s-btn svg{flex-shrink:0}
@@ -272,10 +272,14 @@
     .share-bar .s-rd:hover{background:#ff4500;color:#fff;border-color:#ff4500}
     .share-bar .s-em:hover{background:#4b5563;color:#fff;border-color:#4b5563}
     .share-bar .s-cp:hover{background:#f9fafb}
-    .share-bar .s-cp.copied{background:#0F6E56;color:#fff;border-color:#0F6E56}
+    .share-bar .s-cp.copied{background:#121A24;color:#fff;border-color:#121A24}
     @media(max-width:480px){.share-bar .share-label{width:100%;margin-bottom:4px}.share-bar .s-btn span{display:none}.share-bar .s-btn{padding:8px}}
     @media print{.share-bar{display:none}}
   </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css?v=1">
 </head>
 <body>
 
