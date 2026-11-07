@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six phases of a landscaping contract and which end of a backhoe loader does each: access and clearing, rough grading, irrigation trenches, planting holes, hardscape base, and final grade and cleanup">
+  <rect x="0" y="0" width="800" height="500" fill="#FDFCF8"/>
+  <text x="400" y="48" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" fill="#121A24">Six phases, one machine</text>
+
+  <!-- legend -->
+  <rect x="180" y="70" width="20" height="20" rx="4" fill="#121A24"/>
+  <text x="208" y="87" font-family="Inter,Arial,sans-serif" font-size="24" fill="#4A4A4A">Backhoe</text>
+  <rect x="330" y="70" width="20" height="20" rx="4" fill="#F6C343"/>
+  <text x="358" y="87" font-family="Inter,Arial,sans-serif" font-size="24" fill="#4A4A4A">Loader</text>
+
+  <!-- row 1 -->
+  <text x="330" y="141" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">1 · Access &amp; clearing</text>
+  <rect x="350" y="116" width="250" height="40" rx="5" fill="#121A24"/>
+
+  <!-- row 2 -->
+  <text x="330" y="209" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">2 · Rough grading</text>
+  <rect x="350" y="184" width="330" height="40" rx="5" fill="#F6C343"/>
+
+  <!-- row 3 -->
+  <text x="330" y="277" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">3 · Irrigation trenches</text>
+  <rect x="350" y="252" width="360" height="40" rx="5" fill="#121A24"/>
+
+  <!-- row 4 -->
+  <text x="330" y="345" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">4 · Planting holes</text>
+  <rect x="350" y="320" width="240" height="40" rx="5" fill="#121A24"/>
+
+  <!-- row 5 -->
+  <text x="330" y="413" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">5 · Hardscape base</text>
+  <rect x="350" y="388" width="150" height="40" rx="5" fill="#121A24"/>
+  <rect x="506" y="388" width="150" height="40" rx="5" fill="#F6C343"/>
+
+  <!-- row 6 -->
+  <text x="330" y="478" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">6 · Final grade &amp; cleanup</text>
+  <rect x="350" y="453" width="330" height="40" rx="5" fill="#F6C343"/>
+</svg>
