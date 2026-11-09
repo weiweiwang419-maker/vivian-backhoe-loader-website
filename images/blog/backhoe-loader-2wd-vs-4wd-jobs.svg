@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simplified diagram: five backhoe loader jobs and their drivetrain verdict — trenching with legs down and loading on hard ground are fine on 2WD; pushing into piles and trailer ramps favour 4WD; wet clay after rain makes 4WD essential">
+  <rect width="800" height="500" fill="#F7F6F2"/>
+  <text x="40" y="66" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" fill="#121A24">2WD or 4WD? The ground decides.</text>
+  <text x="40" y="98" font-family="Inter,Arial,sans-serif" font-size="16" fill="#6B6B6B">The legs carry the dig — the wheels carry the loader work.</text>
+
+  <!-- row 1 -->
+  <text x="40" y="152" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">Trenching, legs down</text>
+  <rect x="580" y="126" width="180" height="40" rx="6" fill="#D9D5CB"/>
+  <text x="670" y="153" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#1A1A1A">2WD fine</text>
+
+  <!-- row 2 -->
+  <text x="40" y="226" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">Loading, hard yard</text>
+  <rect x="580" y="200" width="180" height="40" rx="6" fill="#D9D5CB"/>
+  <text x="670" y="227" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#1A1A1A">2WD fine</text>
+
+  <!-- row 3 -->
+  <text x="40" y="300" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">Pushing into piles</text>
+  <rect x="580" y="274" width="180" height="40" rx="6" fill="#F6C343"/>
+  <text x="670" y="301" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#1A1A1A">4WD helps</text>
+
+  <!-- row 4 -->
+  <text x="40" y="374" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">Ramps and sand</text>
+  <rect x="580" y="348" width="180" height="40" rx="6" fill="#F6C343"/>
+  <text x="670" y="375" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#1A1A1A">4WD helps</text>
+
+  <!-- row 5 -->
+  <text x="40" y="448" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#121A24">Wet clay after rain</text>
+  <rect x="580" y="422" width="180" height="40" rx="6" fill="#121A24"/>
+  <text x="670" y="449" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#F6C343">4WD needed</text>
+</svg>
