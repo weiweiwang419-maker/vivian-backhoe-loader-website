@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Simplified diagram: four regional names for the same machine — TLB, backhoe loader, a JCB, tractopelle — all pointing to one machine silhouette, with the note that on documents it is only ever called a backhoe loader">
+  <rect x="0" y="0" width="800" height="500" fill="#F7F6F2"/>
+
+  <!-- Title -->
+  <text x="40" y="72" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#121A24">One machine, many names</text>
+
+  <!-- Four name boxes -->
+  <rect x="50" y="120" width="300" height="66" rx="10" fill="#121A24"/>
+  <text x="200" y="163" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#F6C343">TLB</text>
+
+  <rect x="450" y="120" width="300" height="66" rx="10" fill="#121A24"/>
+  <text x="600" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">backhoe loader</text>
+
+  <rect x="50" y="216" width="300" height="66" rx="10" fill="#121A24"/>
+  <text x="200" y="259" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">&quot;a JCB&quot;</text>
+
+  <rect x="450" y="216" width="300" height="66" rx="10" fill="#121A24"/>
+  <text x="600" y="259" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">tractopelle</text>
+
+  <!-- Region tags -->
+  <text x="200" y="208" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#8A6412">South &amp; East Africa</text>
+  <text x="600" y="208" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#8A6412">the international term</text>
+  <text x="200" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#8A6412">brand borrowed as a name</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#8A6412">France &amp; francophone Africa</text>
+
+  <!-- Converging lines to machine -->
+  <line x1="200" y1="186" x2="200" y2="330" stroke="#C9C4B8" stroke-width="3"/>
+  <line x1="200" y1="330" x2="355" y2="368" stroke="#C9C4B8" stroke-width="3"/>
+  <line x1="600" y1="186" x2="600" y2="330" stroke="#C9C4B8" stroke-width="3"/>
+  <line x1="600" y1="330" x2="445" y2="368" stroke="#C9C4B8" stroke-width="3"/>
+  <line x1="200" y1="282" x2="370" y2="372" stroke="#C9C4B8" stroke-width="3"/>
+  <line x1="600" y1="282" x2="430" y2="372" stroke="#C9C4B8" stroke-width="3"/>
+
+  <!-- Machine silhouette (simplified backhoe loader) -->
+  <g transform="translate(290,340)">
+    <!-- wheels -->
+    <circle cx="55" cy="110" r="26" fill="#121A24"/>
+    <circle cx="55" cy="110" r="10" fill="#F7F6F2"/>
+    <circle cx="165" cy="110" r="32" fill="#121A24"/>
+    <circle cx="165" cy="110" r="12" fill="#F7F6F2"/>
+    <!-- body -->
+    <rect x="30" y="52" width="170" height="46" rx="8" fill="#F6C343"/>
+    <!-- cab -->
+    <rect x="100" y="8" width="60" height="46" rx="6" fill="#121A24"/>
+    <!-- front loader arm -->
+    <rect x="-30" y="60" width="70" height="14" rx="6" fill="#121A24"/>
+    <rect x="-52" y="70" width="34" height="26" rx="4" fill="#121A24"/>
+    <!-- backhoe arm -->
+    <rect x="196" y="30" width="14" height="60" rx="6" fill="#121A24" transform="rotate(28 196 30)"/>
+    <rect x="230" y="18" width="12" height="52" rx="5" fill="#121A24" transform="rotate(-38 230 18)"/>
+    <rect x="238" y="0" width="10" height="30" rx="4" fill="#8A6412" transform="rotate(10 238 0)"/>
+    <!-- outrigger -->
+    <rect x="220" y="96" width="10" height="40" rx="4" fill="#121A24"/>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="120" y="440" width="560" height="44" rx="8" fill="#121A24"/>
+  <text x="400" y="469" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#F6C343">On documents: backhoe loader. Only.</text>
+</svg>
