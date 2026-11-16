@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Simplified diagram: the first 50 hours of a new backhoe loader as a timeline — hour zero unload and inspect, hours zero to ten gentle varied loads, hours ten to twenty re-torque fasteners, hour fifty first service highlighted as the milestone, then normal 250-hour service rhythm">
+  <rect x="0" y="0" width="800" height="500" fill="#F7F6F2"/>
+
+  <!-- Title -->
+  <text x="40" y="72" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#121A24">The first 50 hours</text>
+  <text x="40" y="106" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#6B7280">Break-in timeline for a new backhoe loader</text>
+
+  <!-- Timeline axis -->
+  <line x1="60" y1="260" x2="740" y2="260" stroke="#C9C4B8" stroke-width="4"/>
+
+  <!-- Checkpoint 1: 0 h -->
+  <circle cx="90" cy="260" r="14" fill="#121A24"/>
+  <text x="90" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#121A24">0 h</text>
+  <text x="90" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">unload &amp;</text>
+  <text x="90" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">inspect</text>
+
+  <!-- Checkpoint 2: 0-10 h -->
+  <circle cx="250" cy="260" r="14" fill="#121A24"/>
+  <text x="250" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#121A24">0–10 h</text>
+  <text x="250" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">gentle varied</text>
+  <text x="250" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">loads</text>
+
+  <!-- Checkpoint 3: 10-20 h -->
+  <circle cx="410" cy="260" r="14" fill="#121A24"/>
+  <text x="410" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#121A24">10–20 h</text>
+  <text x="410" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">re-torque</text>
+  <text x="410" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">fasteners</text>
+
+  <!-- Checkpoint 4: 50 h (milestone, highlighted) -->
+  <circle cx="575" cy="260" r="22" fill="#F6C343" stroke="#121A24" stroke-width="4"/>
+  <text x="575" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#8A6412">50 h</text>
+  <text x="575" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#8A6412">first service</text>
+  <text x="575" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">oil + filters</text>
+
+  <!-- Checkpoint 5: 250 h rhythm -->
+  <circle cx="720" cy="260" r="14" fill="#121A24"/>
+  <text x="720" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#121A24">250 h</text>
+  <text x="720" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">normal</text>
+  <text x="720" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6B7280">service rhythm</text>
+
+  <!-- Milestone callout above the highlighted checkpoint -->
+  <line x1="575" y1="238" x2="575" y2="190" stroke="#8A6412" stroke-width="3"/>
+  <rect x="450" y="140" width="250" height="44" rx="8" fill="#121A24"/>
+  <text x="575" y="169" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#F6C343">The milestone that matters</text>
+
+  <!-- Bottom note -->
+  <rect x="120" y="420" width="560" height="44" rx="8" fill="#121A24"/>
+  <text x="400" y="449" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#F6C343">Don&#39;t baby it. Don&#39;t beat it.</text>
+</svg>
