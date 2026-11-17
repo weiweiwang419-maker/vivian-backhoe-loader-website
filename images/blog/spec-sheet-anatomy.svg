@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Simplified diagram: a backhoe loader spec sheet annotated with three color-coded groups — green for standard numbers that compare freely, amber for context numbers that need conditions attached, red for the build facts behind the brochure such as engine model, tires, counterweight, cooling, first-service parts and warranty terms">
+  <rect x="0" y="0" width="800" height="500" fill="#F7F6F2"/>
+
+  <!-- Title -->
+  <text x="40" y="72" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#121A24">Reading a spec sheet</text>
+  <text x="40" y="106" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#6B7280">Three kinds of numbers — and the facts behind them</text>
+
+  <!-- Mock spec sheet -->
+  <rect x="50" y="140" width="270" height="320" rx="10" fill="#FFFFFF" stroke="#E2DED4"/>
+  <text x="70" y="172" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#121A24">SPECIFICATIONS</text>
+  <line x1="70" y1="182" x2="300" y2="182" stroke="#E2DED4"/>
+
+  <text x="70" y="212" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">Dig depth</text>
+  <text x="300" y="212" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2E5E3E">4,300 mm</text>
+  <text x="70" y="238" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">Dump height</text>
+  <text x="300" y="238" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2E5E3E">2,700 mm</text>
+  <text x="70" y="264" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">Rated payload</text>
+  <text x="300" y="264" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2E5E3E">1,600 kg</text>
+  <text x="70" y="290" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">Engine power</text>
+  <text x="300" y="290" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#8A6412">55 kW</text>
+  <text x="70" y="316" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">Travel speed</text>
+  <text x="300" y="316" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#8A6412">32 km/h</text>
+  <text x="70" y="342" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">Cycle time</text>
+  <text x="300" y="342" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#8A6412">11.5 s</text>
+  <text x="70" y="368" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#888">Engine model fitted</text>
+  <text x="300" y="368" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-style="italic" fill="#B04A3A">—</text>
+  <text x="70" y="394" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#888">Tires / counterweight / cooling</text>
+  <text x="300" y="394" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-style="italic" fill="#B04A3A">—</text>
+  <text x="70" y="420" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#888">First-service parts / warranty</text>
+  <text x="300" y="420" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-style="italic" fill="#B04A3A">—</text>
+
+  <!-- Legend -->
+  <rect x="370" y="140" width="390" height="92" rx="10" fill="#EAF2EC" stroke="#2E5E3E"/>
+  <text x="390" y="170" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2E5E3E">STANDARD — compare freely</text>
+  <text x="390" y="194" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">dig depth · dump height · rated payload</text>
+  <text x="390" y="214" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#6B6B6B">just match the measuring convention first</text>
+
+  <rect x="370" y="244" width="390" height="92" rx="10" fill="#FBF3DC" stroke="#B08A2E"/>
+  <text x="390" y="274" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#8A6412">CONTEXT — true, needs conditions</text>
+  <text x="390" y="298" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">power (gross or net?) · speed · cycle time</text>
+  <text x="390" y="318" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#6B6B6B">worth less than they appear to be</text>
+
+  <rect x="370" y="348" width="390" height="112" rx="10" fill="#F7E9E6" stroke="#B04A3A"/>
+  <text x="390" y="378" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#B04A3A">BUILD FACTS — ask for the build sheet</text>
+  <text x="390" y="402" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">engine model · tires · counterweight · cooling</text>
+  <text x="390" y="422" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">first-service parts · warranty terms</text>
+  <text x="390" y="444" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#6B6B6B">these decide ownership — every factory knows them</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#121A24">The brochure wins the inquiry. The build sheet wins ownership.</text>
+</svg>
