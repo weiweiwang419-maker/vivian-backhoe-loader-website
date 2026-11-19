@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Simplified diagram: drive it or truck it — the distance map for moving a backhoe loader between sites, three color-coded zones showing under ten kilometers drive the machine, ten to thirty kilometers depends on move frequency, past thirty to fifty kilometers the trailer wins on cost, tire life, hour meter and risk">
+  <rect x="0" y="0" width="800" height="500" fill="#F7F6F2"/>
+
+  <!-- Title -->
+  <text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#121A24">Drive it or truck it?</text>
+  <text x="40" y="98" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#6B7280">The distance map for road moves between sites</text>
+
+  <!-- Zone 1: drive -->
+  <rect x="40" y="130" width="230" height="200" rx="10" fill="#EAF2EC" stroke="#2E5E3E"/>
+  <text x="155" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2E5E3E">UNDER ~10 KM</text>
+  <text x="155" y="190" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#121A24">DRIVE IT</text>
+  <text x="60" y="220" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">setup time dominates —</text>
+  <text x="60" y="238" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">no truck can compete</text>
+  <text x="60" y="266" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">· boom down and locked</text>
+  <text x="60" y="284" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">· buckets pinned</text>
+  <text x="60" y="302" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">· tires cold and at spec</text>
+
+  <!-- Zone 2: depends -->
+  <rect x="285" y="130" width="230" height="200" rx="10" fill="#FBF3DC" stroke="#B08A2E"/>
+  <text x="400" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#8A6412">~10–30 KM</text>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#121A24">DEPENDS</text>
+  <text x="305" y="220" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">once a month: drive it,</text>
+  <text x="305" y="238" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">count the hours</text>
+  <text x="305" y="266" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">daily shuttle: it has</text>
+  <text x="305" y="284" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">earned a trailer</text>
+  <text x="305" y="312" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">the hour meter runs whether</text>
+  <text x="305" y="324" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">you dig or cruise</text>
+
+  <!-- Zone 3: truck -->
+  <rect x="530" y="130" width="230" height="200" rx="10" fill="#F7E9E6" stroke="#B04A3A"/>
+  <text x="645" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#B04A3A">PAST ~30–50 KM</text>
+  <text x="645" y="190" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#121A24">TRUCK IT</text>
+  <text x="550" y="220" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">the trailer wins on cost,</text>
+  <text x="550" y="238" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333">tire life, hour meter, risk</text>
+  <text x="550" y="266" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">the machine arrives with</text>
+  <text x="550" y="284" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">cool tires and an un-wound</text>
+  <text x="550" y="302" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#6B7280">hour meter</text>
+
+  <!-- Bottom rules bar -->
+  <rect x="40" y="360" width="720" height="90" rx="10" fill="#121A24"/>
+  <text x="400" y="394" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#F6C343">Whichever way it moves, the rules travel with it</text>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#FFFFFF">Plan 20 km/h average · boom down and locked · hot tires mean the speed was wrong for the day</text>
+</svg>
